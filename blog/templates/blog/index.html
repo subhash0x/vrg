@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" media="all" href="{% static 'main/css/stylemobile.min.css' %}">
     <link href="{% static 'static/main/css/jquerysctipttop.css' %}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="static/main/index.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- for the top row starting -->
     <!-- <script src="/static/main/js/Short_the_text.js"></script> -->
     <script src="{% static 'main/ajax/libs/jquery/2.1.1/jquery.min.js' %}"></script>
@@ -190,45 +191,14 @@
         </div>
       </div>
     </div>
-    <link rel="stylesheet" href="static/caurosal/slider.css">
-    <div class="ui grid">
-      <div class="sixteen wide column" style="padding-bottom: -80px;padding-top: 0px;">
 
-        <div class="slider slider1" style="height: 530px; width: 100%; margin:auto;">
-          <div class="slides" id="slides"> </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="ui sixteen column" style="background-color:#005b80; margin-top: 6px; padding-bottom: -1px;padding-top: 6px; margin-bottom: 0px; border-radius: 0;">
-      <div class="anc" id="s"> <marquee behaviour="scroll" direction="left" onmouseover="this.stop();"
-
-          onmouseout="this.start();">
-
-          <img src="static/main/s1.gif" style="width:30px; vertical-align: bottom;"><a
-
-            href="#" target="_blank"><span style="font-size: 17px"><storng><i
-
-                  style="margin-right: 200px; font-weight: bolder;"> Welcome To VRG College Gwalior</i> </storng></span>
-
-                 </a>
-
-<!--
-                 <img src="static/main/s1.gif" style="width:30px; vertical-align: bottom;">
-            <a href="#" target="_blank"><span style="font-size: 17px"><storng> <i style="margin-right: 200px; font-weight: bolder;">#####</i>
-              </storng></span> </a> <img src="static/main/s1.gif" style="width:30px; vertical-align: bottom;">
-              <a href="#" target="_blank"><span style="font-size: 17px"><storng><i style="margin-right: 200px; font-weight: bolder;"> ##</i>
-              </storng></span> </a>--> </marquee>
-
-            </div>
-    </div>
 
     <script>
 
     </script>
     <script src="{% static 'main/js/2.1.3/jquery.min.js' %}"></script>
     <script src="{% static 'main/js/jquery.glide.min.js' %}"></script>
-    <script>
+  <!--   <script>
 
         var imgArray = new Array();
 
@@ -240,25 +210,6 @@
 
         // imgArray.push("{% static 'media/virtual_tour_r5cdh0O.jpg' %}");
         //
-        // imgArray.push("media/IMG_4439_XPT7sxm.jpg");
-        //
-        // imgArray.push("media/IMG_4437_dECGeJi.jpg");
-        //
-        // imgArray.push("media/IMG_4416_gdMfHGG.jpg");
-        //
-        // imgArray.push("media/IMG_4427_LlKryPk.jpg");
-        //
-        // imgArray.push("media/IMG_4162_SEvM4fV.jpg");
-        //
-        // imgArray.push("media/IMG_4150_pFcnuu3.jpg");
-        //
-        // imgArray.push("media/IMG_4142_cdnn6KO.jpg");
-        //
-        // imgArray.push("media/Untitled-2_FPSiAS7.jpg");
-        //
-        // imgArray.push("media/Untitled-111111_1_EdQD0ou.jpg");
-        //
-        // imgArray.push("media/IMG_4163_nFxGxlS.jpg");
 
 
 
@@ -269,6 +220,71 @@
             document.getElementById("item"+(i+1)).style.backgroundSize = 'cover';
         }
     </script>
+-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+</head>
+<body>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '16351_VPGGC_APP.jpg' %}" alt="Los Angeles" width="350" height="200">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'staff.jpg' %}" alt="Chicago" width="350" height="200">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '17.jpg' %}" alt="New York" width="350" height="200">
+    </div>
+  </div>
+  <div class="ui sixteen column" style="background-color:#005b80; margin-top: 6px; padding-bottom: -1px;padding-top: 6px; margin-bottom: 0px; border-radius: 0;">
+    <div class="anc" id="s"> <marquee behaviour="scroll" direction="left" onmouseover="this.stop();"
+
+        onmouseout="this.start();">
+
+        <img src="static/main/s1.gif" style="width:30px; vertical-align: bottom;"><a
+
+          href="#" target="_blank"><span style="font-size: 17px"><storng><i
+
+                style="margin-right: 200px; font-weight: bolder;"> Welcome To VRG College Gwalior</i> </storng></span>
+
+               </a><!--
+               <img src="static/main/s1.gif" style="width:30px; vertical-align: bottom;">
+          <a href="#" target="_blank"><span style="font-size: 17px"><storng> <i style="margin-right: 200px; font-weight: bolder;">#####</i>
+            </storng></span> </a> <img src="static/main/s1.gif" style="width:30px; vertical-align: bottom;">
+            <a href="#" target="_blank"><span style="font-size: 17px"><storng><i style="margin-right: 200px; font-weight: bolder;"> ##</i>
+            </storng></span> </a>--> </marquee>
+
+          </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
     <script src="{% static 'static/caurosal/slider.js' %}"></script>
 
     <div class="ui inverted six item menu stackable borderless" style="z-index: 1000;
@@ -297,36 +313,6 @@
                 <div class="ui divider"></div>
               </li>
               {% endfor %}
-              <!-- <li class="comment"><button class="voice" id="s102" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li>
-              <li class="comment"><button class="voice" id="s103" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li>
-              <li class="comment"><button class="voice" id="s104" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li>
-              <li class="comment"><button class="voice" id="s105" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li>
-              <li class="comment"><button class="voice" id="s106" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li>
-              <li class="comment"><button class="voice" id="s107" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li>
-              <li class="comment"><button class="voice" id="s108" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li>
-              <li class="comment"><button class="voice" id="s109" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li>
-              <li class="comment"><button class="voice" id="s101" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li>
-              <li class="comment"><button class="voice" id="s110" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
-                <div class="ui divider"></div>
-              </li> -->
 
             </ul>
           </div>
