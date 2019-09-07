@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\mahi\sec\menv"
+VIRTUAL_ENV="C:\mahi\sec2\menv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

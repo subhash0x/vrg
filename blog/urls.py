@@ -5,4 +5,5 @@ from datetime import timedelta as tdelta
 
 urlpatterns = [
     path('', views.post_list, name='post_list'),
+    path('blog/base.html', views.base, name='base'),
 ]

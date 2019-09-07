@@ -1,4 +1,4 @@
-#!c:\mahi\sec\menv\scripts\python.exe
+#!c:\mahi\sec2\menv\scripts\python.exe
 from django.core import management
 
 if __name__ == "__main__":

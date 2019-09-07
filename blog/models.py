@@ -4,16 +4,49 @@ from django.utils import timezone
 import datetime
 
 
+
+GENDER_CHOICES = (
+    ('Male','Male'),
+    ('Female ','Female'),
+    ('other','other'),
+)
+
+category= (
+    ('News','ANNOUNCEMENTS/NOTICES/NEWS'),
+    ('Tender ','Tenders'),
+    ('Events','EVENTS/WORKSHOPS/CONFERENCES'),
+)
+
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
-    published_date = models.DateTimeField(blank=True, null=True)
-
+    update_type = models.CharField(max_length=20, choices=category, default='News')
     def publish(self):
-        self.published_date = timezone.now()
         self.save()
-
     def __str__(self):
         return self.title
+
+
+
+class Student(models.Model):
+     name = models.CharField(max_length=100,blank=True)
+     f_name = models.CharField(max_length=100,blank=True)
+     m_name = models.CharField(max_length=100,blank=True)
+     college_name = models.CharField(max_length=100,blank=True)
+     eno = models.CharField(max_length=50, blank=True)
+     course = models.CharField(max_length=50, blank=True)
+     branch = models.CharField(max_length=50, blank=True)
+     gender = models.CharField(max_length=20, choices=GENDER_CHOICES, default='Male')
+     rollno= models.IntegerField(blank=True,default=100)
+     year =models.CharField(max_length=50, blank=True)
+     sem =models.CharField(max_length=50, blank=True)
+     dob = models.DateField()
+     address=models.CharField(max_length=100,blank=True)
+
+     def publish(self):
+         self.save()
+
+     def __str__(self):
+         return self.name
