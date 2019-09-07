@@ -11,10 +11,12 @@ GENDER_CHOICES = (
     ('other','other'),
 )
 
+
 category= (
     ('News','ANNOUNCEMENTS/NOTICES/NEWS'),
     ('Tender ','Tenders'),
     ('Events','EVENTS/WORKSHOPS/CONFERENCES'),
+    ('other','other'),
 )
 
 class Post(models.Model):
@@ -32,8 +34,8 @@ class Post(models.Model):
 
 class Student(models.Model):
      name = models.CharField(max_length=100,blank=True)
-     f_name = models.CharField(max_length=100,blank=True)
-     m_name = models.CharField(max_length=100,blank=True)
+     fname = models.CharField(max_length=100,blank=True)
+     mname = models.CharField(max_length=100,blank=True)
      college_name = models.CharField(max_length=100,blank=True)
      eno = models.CharField(max_length=50, blank=True)
      course = models.CharField(max_length=50, blank=True)
@@ -44,7 +46,7 @@ class Student(models.Model):
      sem =models.CharField(max_length=50, blank=True)
      dob = models.DateField()
      address=models.CharField(max_length=100,blank=True)
-
+     stype = models.CharField(max_length=50, blank=True)
      def publish(self):
          self.save()
 
