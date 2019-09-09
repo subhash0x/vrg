@@ -46,3 +46,6 @@ def base(request):
         'x3' : Post.objects.filter(update_type='Events')
         }
     return render(request, 'blog/base.html', context)
+
+def gallery(request):
+ return render(request, 'blog/gallery.html')
