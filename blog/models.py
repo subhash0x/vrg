@@ -33,6 +33,11 @@ class Post(models.Model):
 
 
 class Student(models.Model):
+     application_id = models.AutoField(primary_key=True)
+     application_fee = models.IntegerField(blank=True,default=0)
+     portal_fee = models.IntegerField(blank=True,default=0)
+     late_fee = models.IntegerField(blank=True,default=0)
+     total_fee = models.IntegerField(blank=True,default=0)
      name = models.CharField(max_length=100,blank=True)
      fname = models.CharField(max_length=100,blank=True)
      mname = models.CharField(max_length=100,blank=True)

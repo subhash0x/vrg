@@ -12,21 +12,30 @@
 
 
 <form action='' method="post">
+
    {% csrf_token %}
-    {{ form }}
+	 
   <div class="container">
   <div class="form-row">
 
 		<div class="col-md-4 mb-3">
       <label for="validationDefault01">Name</label>
-      <input type="text" name='name' class="form-control" id="validationDefault01" placeholder="First name"  required>
+      <input type="text" name='name' class="form-control" id="validationDefault01" placeholder="Full Name"  required>
     </div>
 		</div>
+    <div class="col-md-4 mb-3">
+    <label for="validationDefault01">Gender</label>
+    <select name="gender">
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other"> other </option>
+</select>
+</div>
 
-    <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-    <input type="radio" name="male" value="male" checked> Male<br>
+    <!-- <input type="radio" name="male" value="male" checked> Male<br>
   <input type="radio" name="female" value="female"> Female<br>
   <input type="radio" name="other" value="other"> Other<br>
+   -->
   	<div class="col-md-4 mb-3">
         <label for="validationDefault01">Date of Birth</label>
  <input type="date" name="dob"></div>
@@ -48,22 +57,53 @@
   <div class="form-row">
   <div class="col-md-4 mb-3">
     <label for="validationDefault02">Roll number</label>
-    <input type="text" name="rnumber" class="form-control" id="validationDefault02" placeholder="Roll number"  required>
+    <input type="number" name="rnumber" class="form-control" id="validationDefault02" placeholder="Roll number"  required>
   </div>
 </div>
 
-<div class="form-row">
-<div class="col-md-4 mb-3">
-  <label for="validationDefault02">Semester</label>
-  <input type="text" name="sem" class="form-control" id="validationDefault02" placeholder="Semester"  required>
-</div>
-</div>
-<div class="form-row">
+<script>
+
+function hidefunction() {
+  document.getElementById("sem").style.visibility = "hidden";
+}
+</script>
+
+<select name="year" onchange="hidefunction()" >
+<option value="">Select</option>
+<option value="year">Year</option>
+<option value="sem">Semester</option>
+</select>
+
+
+<div  class="container" id='Year'>
 <div class="col-md-4 mb-3">
   <label for="validationDefault02">Year of study</label>
-  <input type="text" name="year" class="form-control" id="validationDefault02" placeholder="Year of study"  required>
+	<select  name="year">
+	<option value=""></option>
+	<option value="1">1 Year</option>
+	<option value="2">2 Year</option>
+	<option value="3">3 Year</option>
+</select>
 </div>
 </div>
+
+
+<div class="container" id="sem">
+<div class="col-md-4 mb-3">
+  <label for="validationDefault02">Semester</label>
+	<select name="sem">
+	<option value=""></option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+</select>
+</div>
+</div>
+
+
    <div class="form-row">
     <div class="col-md-6 mb-3">
       <label for="validationDefault03">Address</label>
@@ -72,8 +112,8 @@
   </div>
   <div class="form-row">
    <div class="col-md-6 mb-3">
-     <label for="validationDefault03">college name</label>
-     <input type="text" name="college" class="form-control" id="validationDefault03" placeholder='vrg girls college' readonly>
+     <label for="validationDefault03">College</label>
+     <input type="text" name="college" value="vrg girls college" class="form-control" id="validationDefault03" placeholder='vrg girls college' readonly>
    </div>
  </div>
 
@@ -90,10 +130,15 @@
   <input type="text" name="session" class="form-control" id="validationDefault02" placeholder="Session"  required>
 </div>
 </div>
+
 <div class="form-row">
 <div class="col-md-4 mb-3">
   <label for="validationDefault02">Student Type</label>
-  <input type="text" name="stype" class="form-control" id="validationDefault02" placeholder="student type"  required>
+
+	<select name="stype" required>
+	<option value="Regular">Regular</option>
+	<option value="private">private</option>
+</select>
 </div>
 </div>
 
