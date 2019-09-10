@@ -1,0 +1,193 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+
+  <!-- The slideshow -->
+ <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('{% static 'images/vrggate.jpg' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First Slide</h3>
+              <p>This is a description for the first slide.</p>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('{% static 'images/vrg2.jpg' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('{% static 'images/staff.jpg' %}">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+		   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </div>
+      </div>
+
+	  <!-- The slideshow  END-->
+	<!--Start Blink Notification  -->
+      <div class="ui sixteen column" style="background-color:#005b80;/*background-color: #138808 !important;z-index: 1000; */   margin-top: 6px; padding-bottom: -1px;padding-top: 6px; margin-bottom: 0px; border-radius: 0;">
+      <div class="anc" id="s"> <marquee behaviour="scroll" direction="left" onmouseover="this.stop();"
+
+          onmouseout="this.start();"><img src="static/main/s1.gif" style="width:30px; vertical-align: bottom;">
+		  <a href="main/17thConvocation/2019/index.html" target="_blank"><span style="font-size: 17px"><storng>
+		  <i style="margin-right: 200px; font-weight: bolder;"> Welcome to vrg college Gwalior </i> </storng></span> </a>
+
+		  <img src="static/main/s1.gif" style="width:30px; vertical-align: bottom;">
+		  <a href="#" target="_blank"><span style="font-size: 17px"><storng>
+		  <i style="margin-right: 200px; font-weight: bolder;">####</i></storng></span> </a>
+
+		  <img src="static/main/s1.gif" style="width:30px; vertical-align: bottom;">
+		  <a href="main/InductionProgram/2019/index.html" target="_blank"><span style="font-size: 17px"><storng>
+		  <i style="margin-right: 200px; font-weight: bolder;"> #####</i> </storng></span> </a>
+		  </marquee>
+
+		</div>
+    </div>
+
+	<!--END Blink Notification  -->
+   <div class="ui inverted six item menu stackable borderless" style="z-index: 1000; margin-top: 0px; padding: 0px; border: 0px; background-color:#0689b3; border-radius: 0;/*background-color: #138808 !important*/">
+      <a class="item" href="#" target="_blank">Admissions Fees</a>
+      <a class="item" href="#" target="_blank">T.C. Application Fees</a>
+		<a class="item" href="#" target="_blank">ISMS Fees</a>
+		<a class="item" href="#" target="_blank">Forwarding Fees</a>
+		<a class="item" href="#" target="_blank">Check Status</a>
+		<a class="item" href="#" target="_blank">Query</a>
+
+		</div>
+
+     <script src="{% static 'static/caurosal/slider.js' %}"></script>
+
+
+
+    <div class="ui equal width grid stackable newsboxgrid" style="padding-bottom: 25px;margin-left: 0; margin-right: 0">
+      <div class="column centered">
+        <div class="ui raised fluid card panel">
+          <div class="content bg-indigo">
+            <div class="text-center white">
+              <div class="header uppercase">Announcements/Notices/News</div>
+            </div>
+          </div>
+
+
+
+          <div class="description content newsbox">
+            <ul class="demo1" style="list-style: none;">
+                 {% for n in x1 %}
+              <li class="comment">{{ n.title }}<button class="voice" id="s101" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
+                <div class="ui divider"></div>
+              </li>
+              {% endfor %}
+
+            </ul>
+          </div>
+          <div class="extra content panel-footer"> <a href="#">See
+              More</a>
+           </div>
+        </div>
+      </div>
+      <div class="column centered">
+        <div class="ui raised fluid card panel">
+          <div class="content bg-indigo">
+            <div class="text-center white">
+              <div class="header uppercase">Tenders</div>
+            </div>
+          </div>
+
+          <div class="description content newsbox">
+
+              <ul class="demo2" style="list-style: none;">
+                   {% for t in x4 %}
+                <li class="comment">{{ t.title }}<button class="voice" id="s201" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
+                  <div class="ui divider"></div>
+                </li>
+                {% endfor %}
+
+
+            </ul>
+          </div>
+          <div class="extra content panel-footer"> <a href="#">See
+              More</a>
+          </div>
+        </div>
+      </div>
+      <div class="column centered">
+        <div class="ui raised fluid card panel">
+          <div class="content bg-indigo">
+            <div class="text-center white">
+              <div class="header uppercase">Events / Workshops / Conferences</div>
+            </div>
+          </div>
+          <div class="description content newsbox">
+            <ul class="demo3" style="list-style: none;">
+              {% for e in x3 %}
+              <li class="comment">{{ e.title }}<button class="voice" id="s301" style="width:30px;height:20px;background-color: Transparent;border:none;"></button>
+                <div class="ui divider"></div>
+              </li>
+              {% endfor %}
+
+
+            </ul>
+            <a href="#" target="_blank">
+              <!-- <p>For list of all
+              forthcoming FDPs under E&amp;ICT Academy, click here
+            </p> -->
+            </a> </div>
+          <div class="extra content panel-footer"> <a href="#">See
+              More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    $(document).ready(function(){
+	var maxLength = 150;
+	$(".newslinks").each(function(){
+		var myStr = $(this).text();
+		if($.trim(myStr).length > maxLength){
+			var newStr = myStr.substring(0, maxLength);
+			var removedStr = myStr.substring(maxLength, $.trim(myStr).length);
+			$(this).empty().html(newStr);
+			$(this).append(' <a href="javascript:void(0);" class="read-more"><span style="color:blue;">Read more...<span></a>');
+			$(this).append('<span class="more-text">' + removedStr + '</span>');
+		}
+	});
+	$(".read-more").click(function(){
+		$(this).siblings(".more-text").contents().unwrap();
+		$(this).remove();
+	});
+});
+</script> <style type="text/css">
+   .more-text{
+        display: none;
+    }
+</style>
+
+    <!-- footer location -->
+
+
+
+</body>
+{% endblock content %}
