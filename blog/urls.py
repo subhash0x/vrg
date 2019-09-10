@@ -10,5 +10,6 @@ urlpatterns = [
     path('base.html', views.base, name='base'),
     # path('bform.html', views.bform, name='bform'),
     path('payment/', views.payment, name='blog-payment'),
+    path('fee/', views.fee, name='feepayment'),
     path('gallery.html', views.gallery, name='gallery'),
     ]

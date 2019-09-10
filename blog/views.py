@@ -1,5 +1,5 @@
-from django.shortcuts import render
-from django.urls import path, include
+from django.shortcuts import render,redirect
+from django.urls import path, include ,reverse
 from .models import Post,Student
 import datetime
 from django.utils import timezone
@@ -31,16 +31,17 @@ def bform(request):
         branch = request.POST.get("branch")
         year = request.POST.get("session")
         stype = request.POST.get("stype")
-        application_fee=0
+
         if stype == 'Regular':
             application_fee=300
             portal_fee=40
             late_fee=0
-            total_fee=application_fee+late_fee+portal_fee
+            total=0
+            total=application_fee+late_fee+portal_fee
             print("wow")
             print(application_fee)
-        print("not working")
-        student = student.objects.create(
+
+        student = Student.objects.create(
             name=sname,
             gender=gender,
             dob=dob,
@@ -54,13 +55,13 @@ def bform(request):
             year=year,
             stype=stype,
             application_fee=application_fee,
-            total_fee=total_fee,
+            total_fee=total,
             late_fee=late_fee,
             portal_fee=portal_fee
-        )
-        return render(request, 'blog/fee.html', {'title': 'back Form', 'student': student})
+            )
+        return redirect(reverse('feepayment') + '?application_id=' + str(student.application_id))
+        #return redirect('/fee.html',{'title': 'back Form', 'student': student})
     return render(request, 'blog/bform.html')
-
 
 
 def base(request):
@@ -73,7 +74,15 @@ def base(request):
 
 
 def payment(request):
+
     return render(request, 'payment.html')
 
 def gallery(request):
  return render(request, 'blog/gallery.html')
+
+
+def fee(request):
+    id = request.GET.get('application_id')
+    student = Student.objects.get(pk=id)
+    
+    return render(request, 'blog/fee.html', {'student': student})

@@ -1,31 +1,83 @@
 {% load static %}
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Payment time </title>
+    <style>
+    .boxer {
+   display: table;
+   border-collapse: collapse;
+}
+
+.boxer .box-row {
+   display: table-row;
+}
+
+.boxer .box {
+   display: table-cell;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid black;
+}
+</style>
   </head>
   <body>
 
 
+<form action='' method="post">
+{% csrf_token %}
+
+<h1>payment section </h1>
+<table class="wdn_responsive_table flush-left"  id="t771305">
+<caption>update regarding fee</caption>
+<tbody>
+
+      <tr>
+            <td colspan="1" id="t771305_row_0col_0">Application ID</td>
+            <td colspan="1" id="t771305_row_0col_1">{{ student.application_id }}</td>
+       </tr>
+
+
+      <tr>
+            <td colspan="1" id="t771305_row_1col_0">Application Fee</td>
+            <td colspan="1" id="t771305_row_1col_1">{{ student.application_fee }}</td>
+       </tr>
+
+
+      <tr>
+            <td colspan="1" id="t771305_row_2col_0">Portal fee</td>
+            <td colspan="1" id="t771305_row_2col_1">{{ student.portal_fee }}</td>
+       </tr>
+
+      <tr>
+            <td colspan="1" id="t771305_row_3col_0">late fee</td>
+            <td colspan="1" id="t771305_row_3col_1">{{ student.late_fee }}</td>
+       </tr>
+
+
+      <tr>
+            <td colspan="1" id="t771305_row_4col_0">Total fee</td>
+            <td colspan="1" id="t771305_row_4col_1">{{ student.total_fee }}</td>
+       </tr>
+
+
+      <tr>
+            <td colspan="1" id="t771305_row_5col_0"></td>
+            <td colspan="1" id="t771305_row_5col_1"></td>
+       </tr>
+
+</tbody>
+</table>
+
+
+
+<!--
 <h1>{{ student.name }}</h1>
 <h1>{{ student.application_id }}</h1>
 <h1>{{ student.late_fee }}</h1>
 <h1>{{ student.portal_fee }}</h1>
 <h1>{{ student.application_fee }}</h1>
-<h1>{{ student.total_fee }}</h1>
-
+<h1>{{ student.total_fee }}</h1> -->
+  <a href='/paytm/payment?id={{application_id.id}}' class='btn btn-info' style='color:white'> Pay Now </a>
 <button class="btn btn-primary" type="submit">Pay now</button>
 
-<!-- Application number
-Transaction Details
-payment status
-TransactionID
-application Fee
-portal Fee
-Total Fee
-Late fee
-Total fee -->
+
 
 
 

@@ -121,16 +121,27 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 
 #Testing keys
-PAYTM_MERCHANT_KEY = "JzSu58NmY6@aPsj%"
-PAYTM_MERCHANT_ID = "vqwIYU96184524167350"
-HOST_URL = "http://localhost:8080"
-PAYTM_CALLBACK_URL = "/paytm/response/"
+# PAYTM_MERCHANT_KEY = "JzSu58NmY6@aPsj%"
+# PAYTM_MERCHANT_ID = "vqwIYU96184524167350"
+# HOST_URL = "http://localhost:8080"
+# PAYTM_CALLBACK_URL = "/paytm/response/"
+
+
+
+# if DEBUG:
+#     PAYTM_MERCHANT_KEY = "OVbF3I&#wRRpjq7x"
+#     PAYTM_MERCHANT_ID = "kFwbnN99284816906640"
+#     PAYTM_WEBSITE = 'WEB_STAGING'
+#     HOST_URL = 'http://localhost:8000'
+
 
 if DEBUG:
     PAYTM_MERCHANT_KEY = "OVbF3I&#wRRpjq7x"
     PAYTM_MERCHANT_ID = "kFwbnN99284816906640"
     PAYTM_WEBSITE = 'WEB_STAGING'
-    HOST_URL = 'http://localhost:8000'
+    HOST_URL = 'http://127.0.0.1:8000'
+
+
 
 
 # PAYTM_MERCHANT_KEY = "JzSu58NmY6@aPsj%"
