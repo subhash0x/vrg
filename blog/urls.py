@@ -11,4 +11,10 @@ urlpatterns = [
     # path('bform.html', views.bform, name='bform'),
     path('payment/', views.payment, name='blog-payment'),
     path('gallery.html', views.gallery, name='gallery'),
+	path('science.html', views.science, name='science'),
+	path('homescience.html', views.homescience, name= 'homescience' ),
+	path('selffinancecourses.html', views.selffinancecourses, name= 'selffinancecourses' ),
+	path('arts.html', views.arts, name= 'arts' ),
+	
+	
     ]

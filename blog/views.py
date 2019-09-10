@@ -77,3 +77,16 @@ def payment(request):
 
 def gallery(request):
  return render(request, 'blog/gallery.html')
+ 
+def science(request):
+  return render(request, 'blog/science.html')
+
+def homescience(request):
+  return render(request, 'blog/homescience.html')
+ 
+def selffinancecourses(request):
+ return render(request, 'blog/selffinancecourses.html')
+ 
+def arts(request):
+  return render(request, 'blog/arts.html' )
+  
