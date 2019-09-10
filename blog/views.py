@@ -84,7 +84,7 @@ def fee(request):
     id = request.GET.get('application_id')
     student = Student.objects.get(pk=id)
     return render(request, 'blog/fee.html', {'student': student})
-    
+
 
 def gallery(request):
  return render(request, 'blog/gallery.html')
