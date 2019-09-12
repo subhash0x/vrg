@@ -64,6 +64,23 @@ def bform(request):
     return render(request, 'blog/bform.html')
 
 
+
+
+
+
+
+
+
+def fee(request):
+    id = request.GET.get('application_id')
+    student = Student.objects.get(pk=id)
+    if request.method == 'POST':
+        return render(request, 'payment/')
+
+    return render(request, 'blog/fee.html', {'student': student})
+
+
+
 def base(request):
     context = {
         'x1' : Post.objects.filter(update_type='News'),
@@ -80,10 +97,7 @@ def payment(request):
 
 
 
-def fee(request):
-    id = request.GET.get('application_id')
-    student = Student.objects.get(pk=id)
-    return render(request, 'blog/fee.html', {'student': student})
+
 
 
 def gallery(request):

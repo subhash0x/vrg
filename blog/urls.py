@@ -16,6 +16,6 @@ urlpatterns = [
 	path('homescience.html', views.homescience, name= 'homescience' ),
 	path('selffinancecourses.html', views.selffinancecourses, name= 'selffinancecourses' ),
 	path('arts.html', views.arts, name= 'arts' ),
-	
-	
+
+
     ]
