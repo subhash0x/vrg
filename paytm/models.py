@@ -2,10 +2,11 @@ from django.db import models
 from django.conf import settings
 
 from django.utils import timezone
+from blog.models import Student
 # Create your models here.
 
 class PaytmHistory(models.Model):
-    user = models.ForeignKey(settings.AUTH_USER_MODEL,related_name='rel_payment_paytm',on_delete=models.CASCADE)
+    user = models.ForeignKey(Student,related_name='rel_payment_paytm',on_delete=models.CASCADE)
     ORDERID = models.CharField('ORDER ID', max_length=30)
     TXNDATE = models.DateTimeField('TXN DATE', default=timezone.now)
     TXNID = models.TextField('TXN ID')

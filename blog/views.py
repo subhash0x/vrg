@@ -33,8 +33,8 @@ def bform(request):
         stype = request.POST.get("stype")
 
         if stype == 'Regular':
-            application_fee=300
-            portal_fee=40
+            application_fee=100
+            portal_fee=0
             late_fee=0
             total=0
             total=application_fee+late_fee+portal_fee
@@ -66,18 +66,15 @@ def bform(request):
 
 
 
-
-
-
-
-
 def fee(request):
     id = request.GET.get('application_id')
     student = Student.objects.get(pk=id)
     if request.method == 'POST':
-        return render(request, 'payment/')
-
+        return redirect(reverse('paytm-payment') + '?id=' + str(id))
     return render(request, 'blog/fee.html', {'student': student})
+
+
+
 
 
 
@@ -90,9 +87,8 @@ def base(request):
     return render(request, 'blog/base.html', context)
 
 
-def payment(request):
-
-    return render(request, 'payment.html')
+# def payment(request):
+#     return render(request, 'payment.html')
 
 
 

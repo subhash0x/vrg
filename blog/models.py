@@ -52,6 +52,7 @@ class Student(models.Model):
      dob = models.DateField()
      address=models.CharField(max_length=100,blank=True)
      stype = models.CharField(max_length=50, blank=True)
+     payment_status = models.CharField(max_length=50, default='pending')
      def publish(self):
          self.save()
 

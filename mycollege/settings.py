@@ -140,6 +140,7 @@ if DEBUG:
     PAYTM_MERCHANT_ID = "kFwbnN99284816906640"
     PAYTM_WEBSITE = 'WEB_STAGING'
     HOST_URL = 'http://127.0.0.1:8000'
+    PAYTM_CALLBACK_URL = "/paytm/response/"
 
 
 

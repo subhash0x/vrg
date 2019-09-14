@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.conf import settings
 from . import Checksum
 from paytm.models import PaytmHistory
-from blog.models import Post, Order
+from blog.models import Post, Student
 from django.contrib.auth.models import User
 from django.urls import reverse
 
@@ -18,8 +18,8 @@ def home(request):
 
 
 def payment(request):
-    game = Post.objects.get(id=request.GET['id'])
-    order = Order.objects.create(game=game, owner=request.user)
+    student = Student.objects.get(pk=request.GET['id'])
+    print(id)
     MERCHANT_KEY = settings.PAYTM_MERCHANT_KEY
     MERCHANT_ID = settings.PAYTM_MERCHANT_ID
     get_lang = "/" + get_language() if get_language() else ''
@@ -27,15 +27,17 @@ def payment(request):
     # Generating unique temporary ids
     order_id = Checksum.__id_generator__()
 
-    bill_amount = game.reg_fee
+    bill_amount = student.total_fee
+    print(bill_amount)
     if bill_amount == 0 :
-        order.payment_status = 'TXN_SUCCESS'
-        order.save()
-        return redirect('/payment?id=' + str(order.game.id) + '&success=true')
+        student.payment_status = 'TXN_SUCCESS'
+        student.save()
+        return redirect('/fee' +'?application_id='+ str(student.application_id) + '&success=true')
+
     elif bill_amount:
         data_dict = {
                     'MID':MERCHANT_ID,
-                    'ORDER_ID':order.id,
+                    'ORDER_ID':student.application_id,
                     'TXN_AMOUNT': bill_amount,
                     'CUST_ID': request.user.username,
                     'INDUSTRY_TYPE_ID':'Retail',
@@ -43,14 +45,10 @@ def payment(request):
                     'CHANNEL_ID':'WEB',
                     'CALLBACK_URL':CALLBACK_URL,
                 }
-        param_dict = data_dict
-        #print(param_dict)
-        param_dict['CHECKSUMHASH'] = Checksum.generate_checksum(data_dict, MERCHANT_KEY)
-        return render(request,"payment.html",{'paytmdict':param_dict})
+        print(data_dict)
+        data_dict['CHECKSUMHASH'] = Checksum.generate_checksum(data_dict, MERCHANT_KEY)
+        return render(request,"payment.html",{'paytmdict':data_dict})
     return HttpResponse("Bill Amount Could not find. ?bill_amount=10")
-
-
-
 
 
 @csrf_exempt
@@ -62,15 +60,15 @@ def response(request):
             data_dict[key] = request.POST[key]
         verify = Checksum.verify_checksum(data_dict, MERCHANT_KEY, data_dict['CHECKSUMHASH'])
         if verify:
-            order = Order.objects.get(id=data_dict['ORDERID'])
-            ph = PaytmHistory.objects.create(user=order.owner, **data_dict)
+            order = Student.objects.get(pk=data_dict['ORDERID'])
+            ph = PaytmHistory.objects.create(user=order, **data_dict)
             order.payment_status = data_dict['STATUS']
             order.save()
             #print(order.payment_status)
             if order.payment_status == 'TXN_SUCCESS':
-                return redirect('/payment?id=' + str(order.game.id) + '&success=true')
+                return redirect('/fee' +'?application_id=' + str(order.application_id) + '&success=true')
             else:
-                return redirect('/payment?id=' + str(order.game.id) + '&success=false')
+                return redirect('/fee' +'?application_id=' + str(order.application_id) + '&success=false')
         else:
             return HttpResponse("checksum verify failed")
     return HttpResponse(status=200)
