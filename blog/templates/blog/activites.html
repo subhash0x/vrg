@@ -1,0 +1,357 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+  <head>
+      <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<br>
+
+<div class="container">
+  <h2>Toggleable Tabs</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#ncc">N.C.C.</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#nss">N.S.S</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#sports">Sports</a>
+    </li>
+      <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#cultural">Cultural</a>
+    </li>
+      
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+      <!-- NCC Details Start -->
+    <div id="ncc" class="container tab-pane active"><br>
+      <h3>National Cadet Corps</h3>
+      
+        <div class="right_part"><!-- InstanceBeginEditable name="content" -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="../images/ncc_banner.jpg" alt="" width="760" height="236" /></td>
+      </tr>
+      <tr>
+        <td style="padding:20px; padding-bottom:0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="red_corner">History Of NCC in Vijaya Raje Government Girls PG College</td>
+            </tr>
+            <tr>
+              <td class="welcome_text"><strong>N.C.C.</strong> was started in August 1965 in Government College of Home Science and Science for Women,Gwalior <span class="style2">name of First ncc officer </span>was the first N.C.C. officer. An additional company 1B was opened in 1990 because of the increased strength of the college students.              </td>
+            </tr>
+            
+        </table></td>
+      </tr>
+    <!-- NCC image  -->
+        
+        <div class="container">
+  
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'images/NCC1.jpg' %}" target="_blank">
+          <img src="{% static 'images/NCC1.jpg' %}" rel="prettyPhoto[gallery]" alt="#" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'images/NCC2.jpg' %}" target="_blank">
+          <img src="{% static 'images/NCC2.jpg' %}" rel="prettyPhoto[gallery]" alt="#" style="width:100%">
+          </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'images/NCC3.jpg' %}" target="_blank">
+          <img src="{% static 'images/NCC3.jpg' %}" rel="prettyPhoto[gallery]" alt="#" style="width:100%">
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
+        
+        
+      <tr>
+        <td class="welcome_text" style="padding:20px; padding-top:0px; padding-bottom:0px;"><p class="style3">Aims of NCC</p>
+          <ol>
+            <li>To Develop Character, Comradeship, Discipline, Leadership, Secular Outlook, Spirit of Adventure, and Ideals of Selfless Service amongst the Youth of the Country.</li>
+            <li>To Create a Human Resource of Organized, Trained and Motivated Youth, to Provide Leadership in all Walks of life and be Always Available for the Service of the Nation.</li>
+            <li>To Provide a Suitable Environment to Motivate the Youth to Take Up a Career in the Armed Forces.</li>
+          </ol>        </td>
+      </tr>
+      <tr>
+        <td class="welcome_text" style="padding:20px; padding-top:0px; padding-bottom:0px;"><p class="style3">CADET ELIGIBILITY-</p>
+          <ul>
+            <li>3years course with 2 camps for “C” certificate examination.</li>
+            <li>2 years with 1 camp required for “B” certificate examination.</li>
+            <li>The college has active participation in the state, national, international level camps that are organized by the National Cadet Corps every year. LIKE- CATC, TSC, RDC.NIC,SSC etc.</li>
+          </ul>        </td>
+      </tr>
+      <tr>
+        <td class="welcome_text" style="padding:20px; padding-top:0px; padding-bottom:0px;"><p><span class="style3">REGULAR PROJECTS</span> Today Authorized and Enrolled Strength of N.C.C. 1A &amp; 1B Coy of the college is 214 in all. Activities of N.C.C are multicolored like</p>
+          <ul>
+            <li>Regular parade- 6 period per week/120 period per session.</li>
+            <li>Annual training camp – 10 Days</li>
+            <li>Adventure activities-
+                <ul>
+                  <li>Parasailing,</li>
+                  <li>Para jumping,</li>
+                  <li>Horse riding,</li>
+                </ul>
+            </li>
+            <li>Rock Climbing are the adventurous activities whereas Social activities include:
+                <ul>
+                  <li>Tracking camp</li>
+                </ul>
+            </li>
+          </ul>        </td>
+      </tr>
+      <tr>
+        <td class="welcome_text" style="padding:20px; padding-top:0px;"><span class="style3">Social Service</span>
+          <ul>
+            <li>Local cycle Expedition for cadets.</li>
+            <li>Blood donation by cadets,</li>
+            <li>Eye donation pledge by cadets,</li>
+            <li>Blind school visits on the Raksha Bandhan vocation in every year.</li>
+            <li>Visit to rural areas to teach them for hygine sanitation.</li>
+          </ul>        </td>
+      </tr>
+      <tr>
+        <td class="welcome_text" style="padding:0px; padding-top:0px;"> 	</td>
+      </tr>
+            </table></div> 
+    </div>
+     <!-- NCC Details END -->
+      
+       <!-- NSS Details Start -->
+      <div id="nss" class="container tab-pane fade"><br>
+      <h3>National Service Scheme</h3>
+      <div class="right_part"><!-- InstanceBeginEditable name="content" -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="../images/nss_banner.jpg" alt="" width="760" height="227" /></td>
+      </tr>
+      <tr>
+        <td valign="top" style="padding:20px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="red_corner">National Service Scheme</td>
+            </tr>
+            <tr>
+              <td><br />
+                <span class="style2">                AIMS OF N.S.S.                </span>
+                <ul style="line-height:20px;" type="circle">
+                  <li>To develop a national consciousness among the youth.</li>
+                  <li>To generate social awareness among the students.</li>
+                  <li>To promote the dignity of labour among the educated.</li>
+                  <li>To strengthen the spirit of service and sacrifice in the younger generation .<br />
+                      </li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td class="welcome_text"><p><span class="style2">Goal of N.S.S.</span> Education through community service and community services through education.</p>
+              <p><strong><span class="style3">Over all object of NSS</span> </strong>Development of students personality through community service.</p></td>
+            </tr>
+            <tr>
+              <td class="welcome_text"><span class="style2">Credit Eligibility</span>
+                <ul style="line-height:20px;" type="circle">
+                  <li>120 hours of service in two academic years or Special camping programme for ten days .</li>
+                  <li>Participation in National level or State level camps.</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td class="welcome_text"><span class="style2">Programme of N.S.S. - Two fold Programme</span>
+                <ul style="line-height:20px;" type="circle">
+                  <li>Regular activities.</li>
+                  <li>Social Camping (7 days).</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td class="welcome_text"><span class="style2">Regular Projects</span>
+                <ul style="line-height:20px;" type="circle">
+                  <li>Traffic regulation .</li>
+                  <li>Plantation.</li>
+                  <li>Animal check up camp.</li>
+                  <li>Blind assistance.</li>
+                  <li>Medical project .</li>
+                  <li>Garments collection.</li>
+                  <li>Special coaching classes to the school children .</li>
+                  <li>Helping social welfare institution.</li>
+                  <li>Rural on upliftment.</li>
+                  <li>Non-formal education .</li>
+                  <li>Project on environment .</li>
+                  <li>Blood donation.</li>
+                  <li>Haemoglobin Test.</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td class="welcome_text"><span class="style2">Social Programme</span>
+                <ul style="line-height:20px;" type="circle">
+                  <li>Beti Bachoo Andolan</li>
+                  <li>Plastic Free M.P. (Gwalior)</li>
+              </ul></td>
+            </tr>
+            <tr>
+              <td class="welcome_text"><span class="style2">Special Achievement</span>
+                <ul style="line-height:20px;" type="circle">
+                  <li>Ku. Sunita Pathak M.P. School</li>
+                  <li>R.D.C. parade (Semi final selection)</li>
+                </ul>
+                <p>----------------------<br />
+                </p>
+                <ul>
+                  <li>Hemlata - B.com III sem</li>
+                  <li>Netu rana - B.com III Sem</li>
+                </ul>                
+              </td>
+            </tr>
+            
+            
+        </table></td>
+      </tr>
+    </table>
+  <!-- InstanceEndEditable --></div>
+</div>
+   
+    
+    <!-- NSS Details END -->
+    <!-- Sports Details Start -->
+    <div id="sports" class="container tab-pane fade"><br>
+      <h3>Sports</h3>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="padding:20px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="red_corner">Department of Sports</td>
+            </tr>
+            <tr>
+              <td class="welcome_text"><strong>The Department of Sports</strong> is working since the establishment of college i.e. 1963. The Department is responsible to control and conduct various sports and physical activities.</td>
+            </tr>
+            
+        </table></td>
+      </tr>
+      
+      
+      <tr>
+        <td class="welcome_text" style="padding:20px; padding-bottom:0px; padding-top:0px;"><p><span class="style2">Participations of college teams – </span><br />
+          The college teams mainly participate in following sports in every academic session -</p>
+          <ol>
+            <li class="style3">Badminton</li>
+            <li class="style3">Table Tennis &amp; Gym</li>
+            <li class="style3">Kho-Kho</li>
+            <li class="style3">Basket Ball</li>
+            <li class="style3">Volley Ball</li>
+            <li class="style3">Kabaddi</li>
+            <li class="style3">Chess</li>
+            <li class="style3">Track &amp; Field</li>
+            <li class="style3">Handball</li>
+            <li class="style3">200 meter track</li>
+            <li class="style3">Aerobics</li>
+            <li class="style3">Cricket</li>
+            <li class="style3">Karate</li>
+          </ol>        </td>
+      </tr>
+</table>
+</div>
+        <!-- Sports Details End-->
+        <!-- cultural Details Start -->
+<div id="cultural" class="container tab-pane fade"><br>
+      <h3>Youth Festival</h3>
+      <div class="right_part"><!-- InstanceBeginEditable name="content" -->
+    </div><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td style="padding:20px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            
+            <tr>
+              <td class="welcome_text"><strong>Social Gathering :</strong> Students are encouraged to participate in various cultural activities organized by the college during an academic session. Following cultural activities are the part of social gathering which is scheduled in December. The prize distribution function is organized to felicitate the winners of Academic &amp; Cultural Activities.<br />
+                <ul>
+                  <li class="style2">Debates</li>
+                  <li class="style2">Elocution</li>
+                  <li class="style2">Quiz</li>
+                  <li class="style2">Mime</li>
+                  <li class="style2">Drama</li>
+                  <li class="style2">dance (classical &amp; western)</li>
+                  <li class="style2">Vocal music (Indian Classical &amp; Western)</li>
+                  <li class="style2">Rangoli</li>
+                  <li class="style2">Alpana</li>
+                  <li class="style2">Menhdi</li>
+                  <li class="style2">Flower decoration</li>
+                  <li class="style2">Salad decoration</li>
+                  <li class="style2">Greeting Cards</li>
+                </ul>              </td>
+            </tr>
+            
+        </table></td>
+      </tr>
+         <div class="container">
+  
+  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'images/event-1.jpg' %}" target="_blank">
+          <img src="{% static 'images/event-1.jpg' %}" rel="prettyPhoto[gallery]" alt="#" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'images/event-2.jpg' %}" target="_blank">
+          <img src="{% static 'images/event-2.jpg' %}" rel="prettyPhoto[gallery]" alt="#" style="width:100%">
+          </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'images/event-3.jpg' %}" target="_blank">
+          <img src="{% static 'images/event-3.jpg' %}" rel="prettyPhoto[gallery]" alt="#" style="width:100%">
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
+     <br>
+        <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'images/event-4.jpg' %}" target="_blank">
+          <img src="{% static 'images/event-4.jpg' %}" rel="prettyPhoto[gallery]" alt="#" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'images/event-5.jpg' %}" target="_blank">
+          <img src="{% static 'images/event-5.jpg' %}" rel="prettyPhoto[gallery]" alt="#" style="width:100%">
+          </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="{% static 'images/event-6.jpg' %}" target="_blank">
+          <img src="{% static 'images/event-6.jpg' %}" rel="prettyPhoto[gallery]" alt="#" style="width:100%">
+          </a>
+      </div>
+    </div>
+  </div>
+    </table>
+      </div>
+    </div>
+    </div>
+</body>
+{% endblock content %}

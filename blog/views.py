@@ -31,7 +31,7 @@ def bform(request):
         branch = request.POST.get("branch")
         year = request.POST.get("session")
         stype = request.POST.get("stype")
-
+        sstype = request.POST.get("sstype")
         if stype == 'Regular':
             application_fee=100
             portal_fee=0
@@ -110,3 +110,12 @@ def selffinancecourses(request):
 
 def arts(request):
   return render(request, 'blog/arts.html' )
+
+def index(request):
+ return render(request, 'blog/index.html')
+
+def activites(request):
+ return render(request, 'blog/activites.html')
+
+def contact(request):
+ return render(request, 'blog/contact.html')
