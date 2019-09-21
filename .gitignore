@@ -1,4 +1,6 @@
 /menv/
+/myenv/
+/myenv
 *.settings.py
 .installed.cfg
 bin
