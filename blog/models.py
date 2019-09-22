@@ -25,6 +25,8 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     update_type = models.CharField(max_length=20, choices=category, default='News')
+    specifications = models.FileField(upload_to='router_specifications',default='null')
+
     def publish(self):
         self.save()
     def __str__(self):
