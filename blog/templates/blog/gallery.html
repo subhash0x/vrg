@@ -3,6 +3,18 @@
 {% block content %}
 
 
+<head>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+<div class="w3-container w3-center w3-animate-top">
+  <h1>Vijaya Raje Government Girls PG College - Gallery</h1>
+  <p>Extra Curricular Activites</p>
+</div><br>
 
 <!-- Grid row -->
 <div class="row">
@@ -21,22 +33,25 @@
           <div class="modal-body mb-0 p-0">
 
             <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/A3PDXmYoF5U"
-                allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_0979.jpg' %}" allowfullscreen></iframe>
             </div>
 
           </div>
 
           <!--Footer-->
           <div class="modal-footer justify-content-center">
-            <span class="mr-4">Spread the word!</span>
-            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
             <!--Twitter-->
-            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
             <!--Google +-->
-            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
             <!--Linkedin-->
-            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
             <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
 
@@ -49,8 +64,7 @@
     </div>
     <!--Modal: Name-->
 
-    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-1.jpg" alt="video"
-        data-toggle="modal" data-target="#modal1"></a>
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_0979.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
 
   </div>
   <!-- Grid column -->
@@ -69,7 +83,7 @@
           <div class="modal-body mb-0 p-0">
 
             <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wTcNtgA6gHs"
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_0995.jpg' %}"
                 allowfullscreen></iframe>
             </div>
 
@@ -77,14 +91,18 @@
 
           <!--Footer-->
           <div class="modal-footer justify-content-center">
-            <span class="mr-4">Spread the word!</span>
-            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
             <!--Twitter-->
-            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
             <!--Google +-->
-            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
             <!--Linkedin-->
-            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
             <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
 
@@ -97,7 +115,7 @@
     </div>
     <!--Modal: Name-->
 
-    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-2.jpg" alt="video"
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_0995.jpg' %}" alt="video"
         data-toggle="modal" data-target="#modal6"></a>
 
   </div>
@@ -117,7 +135,7 @@
           <div class="modal-body mb-0 p-0">
 
             <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1011.jpg' %}"
                 allowfullscreen></iframe>
             </div>
 
@@ -126,14 +144,17 @@
           <!--Footer-->
           <div class="modal-footer justify-content-center">
             <span class="mr-4">Spread the word!</span>
-            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
             <!--Twitter-->
-            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
             <!--Google +-->
-            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
             <!--Linkedin-->
-            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
-
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
             <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
 
           </div>
@@ -145,7 +166,7 @@
     </div>
     <!--Modal: Name-->
 
-    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-3.jpg" alt="video"
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1011.jpg' %}" alt="video"
         data-toggle="modal" data-target="#modal4"></a>
 
   </div>
@@ -171,7 +192,7 @@
           <div class="modal-body mb-0 p-0">
 
             <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GUEZCxBcM78"
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1028.jpg' %}"
                 allowfullscreen></iframe>
             </div>
 
@@ -180,13 +201,17 @@
           <!--Footer-->
           <div class="modal-footer justify-content-center">
             <span class="mr-4">Spread the word!</span>
-            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+           <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
             <!--Twitter-->
-            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
             <!--Google +-->
-            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
             <!--Linkedin-->
-            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
             <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
 
@@ -199,7 +224,7 @@
     </div>
     <!--Modal: Name-->
 
-    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-4.jpg" alt="video"
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1028.jpg' %}" alt="video"
         data-toggle="modal" data-target="#modal2"></a>
 
   </div>
@@ -219,7 +244,7 @@
           <div class="modal-body mb-0 p-0">
 
             <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PjGkVCAo8Fw"
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1038.jpg' %}"
                 allowfullscreen></iframe>
             </div>
 
@@ -228,14 +253,17 @@
           <!--Footer-->
           <div class="modal-footer justify-content-center">
             <span class="mr-4">Spread the word!</span>
-            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
             <!--Twitter-->
-            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
             <!--Google +-->
-            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
             <!--Linkedin-->
-            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
-
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
             <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
 
           </div>
@@ -247,7 +275,7 @@
     </div>
     <!--Modal: Name-->
 
-    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-5.jpg" alt="video"
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1038.jpg' %}" alt="video"
         data-toggle="modal" data-target="#modal5"></a>
 
   </div>
@@ -267,7 +295,7 @@
           <div class="modal-body mb-0 p-0">
 
             <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gsNY7TV4r1M"
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1064.jpg' %}"
                 allowfullscreen></iframe>
             </div>
 
@@ -276,13 +304,17 @@
           <!--Footer-->
           <div class="modal-footer d-block d-md-flex justify-content-center">
             <span class="mr-4">Spread the word!</span>
-            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
             <!--Twitter-->
-            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
             <!--Google +-->
-            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
             <!--Linkedin-->
-            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
 
             <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
 
@@ -295,12 +327,1193 @@
     </div>
     <!--Modal: Name-->
 
-    <a><img class="img-fluid z-depth-1" src="https://mdbootstrap.com/img/screens/yt/screen-video-6.jpg" alt="video"
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1064.jpg' %}" alt="video"
         data-toggle="modal" data-target="#modal3"></a>
 
   </div>
   <!-- Grid column -->
 
+        <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1082.jpg' %}"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1082.jpg' %}" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+        <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1085.jpg' %}"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1085.jpg' %}" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+        <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1095.jpg' %}"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1095.jpg' %}" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+        <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1097.jpg' %}"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1097.jpg' %}" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+        <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1098.jpg' %}"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1098.jpg' %}" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+        <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1100.jpg' %}"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1100.jpg' %}" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+        <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1107.jpg' %}"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1107.jpg' %}" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+        <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1109.jpg' %}"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1109.jpg' %}" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+        <!-- Grid column -->
+  <div class="col-lg-4 col-md-6 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1116.jpg' %}"
+                allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer d-block d-md-flex justify-content-center">
+            <span class="mr-4">Spread the word!</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1116.jpg' %}" alt="video"
+        data-toggle="modal" data-target="#modal3"></a>
+
+  </div>
+  <!-- Grid column -->
+  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1123.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1123.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1126.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1126.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1135.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1135.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1152.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1152.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1169.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1169.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1171.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1171.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1184.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1184.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1191.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1191.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1214.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1214.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1229.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1229.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1237.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1237.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1246.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1246.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1251.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1251.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1353.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1353.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->  <!-- Grid column -->
+  <div class="col-lg-4 col-md-12 mb-4">
+
+    <!--Modal: Name-->
+    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+
+        <!--Content-->
+        <div class="modal-content">
+
+          <!--Body-->
+          <div class="modal-body mb-0 p-0">
+
+            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+              <iframe class="embed-responsive-item" src="{% static 'images/gallery/DSC_1406.jpg' %}" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!--Footer-->
+          <div class="modal-footer justify-content-center">
+            <span class="mr-4">Share photos</span>
+            <a type="button" class="btn-floating btn-sm btn-fb"><i style="font-size:24px" class="fa">&#xf230;</i></a>
+            <!--Twitter-->
+            <a type="button" class="btn-floating btn-sm btn-tw"><i style="font-size:24px" class="fa">&#xf099;</i></a>
+            <!--Google +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf0d4;</i>
+            <!--Whatsapp +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"><i style="font-size:24px" class="fa">&#xf232;</i></a>
+            <!--pinterest +-->
+            <a type="button" class="btn-floating btn-sm btn-gplus"> <i style="font-size:24px" class="fa">&#xf0d2;</i>
+            <!--Linkedin-->
+            <a type="button" class="btn-floating btn-sm btn-ins"><i style="font-size:24px" class="fa">&#xf0e1;</i></a>
+
+            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+          </div>
+
+        </div>
+        <!--/.Content-->
+
+      </div>
+    </div>
+    <!--Modal: Name-->
+
+    <a><img class="img-fluid z-depth-1" src="{% static 'images/gallery/DSC_1406.jpg' %}" alt="video" data-toggle="modal" data-target="#modal1"></a>
+
+  </div>
+  <!-- Grid column -->
 </div>
 <!-- Grid row -->
+</body>
 {% endblock content %}
