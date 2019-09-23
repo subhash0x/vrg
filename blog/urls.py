@@ -17,7 +17,6 @@ urlpatterns = [
 	path('homescience.html', views.homescience, name= 'homescience' ),
 	path('selffinancecourses.html', views.selffinancecourses, name= 'selffinancecourses' ),
 	path('arts.html', views.arts, name= 'arts' ),
-    path('index.html',views.index, name = 'index'),
 	path('activites.html', views.activites, name ='activites'),
     path('contact.html', views.contact, name = 'contact'),
     ]

@@ -1,4 +1,5 @@
 {% load static %}
+<head>
     <style>
     .boxer {
    display: table;
@@ -16,16 +17,16 @@
    border: 1px solid black;
 }
 </style>
-  </head>
+</head>
   <body>
 
 
 <form action='' method="post">
 {% csrf_token %}
-
-<h1>payment section </h1>
-<table class="wdn_responsive_table flush-left"  id="t771305">
-<caption>update regarding fee</caption>
+<center>
+<h1>Payment Details</h1>
+<table border="1" class="wdn_responsive_table flush-left"  id="t771305">
+<caption>update regarding fee<br></caption>
 <tbody>
 
       <tr>
@@ -64,7 +65,7 @@
 
 </tbody>
 </table>
-
+    
 
 
 <!--
@@ -73,13 +74,11 @@
 <h1>{{ student.late_fee }}</h1>
 <h1>{{ student.portal_fee }}</h1>
 <h1>{{ student.application_fee }}</h1>
-<h1>{{ student.total_fee }}</h1> -->
+<h1>{{ student.total_fee }}</h1> --><br>
   <a href='/paytm/payment?id={{application_id.id}}' class='btn btn-info' style='color:white'> Pay Now </a>
 <button class="btn btn-primary" type="submit">Pay now</button>
 
+</center>
 
-
-
-
-  </body>
-</html>
+      </form>
+</body>

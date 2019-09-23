@@ -111,8 +111,6 @@ def selffinancecourses(request):
 def arts(request):
   return render(request, 'blog/arts.html' )
 
-def index(request):
- return render(request, 'blog/index.html')
 
 def activites(request):
  return render(request, 'blog/activites.html')
