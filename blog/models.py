@@ -13,10 +13,9 @@ GENDER_CHOICES = (
 
 
 category= (
-    ('News','ANNOUNCEMENTS/NOTICES/NEWS'),
-    ('Tender ','Tenders'),
-    ('Events','EVENTS/WORKSHOPS/CONFERENCES'),
-    ('other','other'),
+    ('News','Student Notice Board'),
+    ('Events','Events / Workshops / Conferences'),
+    ('other','Staff Notice Board'),
 )
 
 class Post(models.Model):

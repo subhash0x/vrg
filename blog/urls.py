@@ -19,4 +19,5 @@ urlpatterns = [
 	path('arts.html', views.arts, name= 'arts' ),
 	path('activites.html', views.activites, name ='activites'),
     path('contact.html', views.contact, name = 'contact'),
+    path('telephonedir.html', views.telephonedir, name = 'telephonedir'),
     ]

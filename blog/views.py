@@ -117,3 +117,6 @@ def activites(request):
 
 def contact(request):
  return render(request, 'blog/contact.html')
+
+def telephonedir(request):
+ return render(request, 'blog/telephonedir.html')

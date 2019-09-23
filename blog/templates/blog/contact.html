@@ -1,220 +1,61 @@
 {% extends 'blog/base.html' %}
 {% load static %}
 {% block content %}
-
-
-
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Contact Form With File Upload</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <script src="{% static 'contact/form.js' %}"></script>
-    
-    
- <!--  <link rel="stylesheet" type="text/css" href="{% static 'contact/form.css' %}"> -->
-   
 <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
 
-/*General */
-html{    
-  background:url(' ') no-repeat;
-  background-size: cover;
-  height:100%;
-}
-body
-{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-}
+input[type=text], select, textarea {
+  width: 100%;
 
-#feedback-page{
-	text-align:center;
-}
-
-#form-main{
-	width:100%;
-	float:left;
-	padding-top:0px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-#form-div {
-	background-color:rgba(72,72,72,0.4);
-	padding-left:35px;
-	padding-right:35px;
-	padding-top:35px;
-	padding-bottom:50px;
-	width: 450px;
-	float: left;
-	left: 50%;
-	position: absolute;
-  margin-top:30px;
-	margin-left: -260px;
-  border-radius: 7px;
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container {
+  border-radius: 5px;
   
-}
-
-.montform .feedback-input {
-	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-	font-size: 18px;
-	border-radius: 0;
-	line-height: 22px;
-	background-color: #fbfbfb;
-	padding: 13px 13px 13px 54px;
-	margin-bottom: 10px;
-	width:100%;
-	box-sizing: border-box;
-	border: 3px solid rgba(0,0,0,0);
-}
-/*Inputs styles*/
-.montform .feedback-input:focus{
-	background: #fff;
-	border: 3px solid #3498db;
-	color: #3498db;
-	outline: none;
-  padding: 13px 13px 13px 54px;
+  padding: 20px;
 }
 
 
-/* Icons ---------------------------------- */
-.montform  #name{
-	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
+</style>
+</head>
+<body>
+    <br>
+    <center><h3>Contact Form</h3></center>
 
-.montform  #name:focus{
-	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-address-book.svg);
-	background-size: 30px 30px;
-	background-position: 8px 5px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
+<div class="container">
+  <form action="#">
+    <label for="fname">Full Name</label>
+    <input type="text" maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)" id="fname" name="fullname" placeholder="Your Name ">
+    <label for="fname">Father Name</label>
+    <input type="text" maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)" id="fathername" name="fathername" placeholder="Father Name">
+    <label for="lname">Enrollment No.</label>
+    <input type="text" maxlength = "15" id="enrollment" name="enrollment" placeholder="Enrollment Number">
+    <label for="lname">Email Address</label>
+    <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" name="email"  placeholder="example@email.com">
+    <label for="subject">Subject</label>
+    <textarea id="subject" maxlength="2500" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="afiles">Attach Files</label>
+    <input type="file" name="pic" accept="image/*"><input type="submit" value="Submit">
+  </form>
+</div>
+</body>
 
-.montform  #email{
-	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-.montform  #email:focus{
-	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-mail.svg);
-	background-size: 30px 30px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-.montform  #comment{
-	background-image: url(https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/svgs/fi-pencil.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
-}
-
-.montform  textarea {
-    width: 100%;
-    height: 150px;
-    line-height: 150%;
-    resize:vertical;
-}
-
-.montform  input:hover, .montform  textarea:hover,
-.montform  input:focus, .montform  textarea:focus {
-	background-color:#e6e6e6;
-}
-
-.button-blue{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	float:left;
-	width: 100%;
-	border: #fbfbfb solid 4px;
-	cursor:pointer;
-	background-color: #3498db;
-	color:white;
-	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
-	transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-
-.button-blue:hover{
-	background-color: rgba(0,0,0,0);
-	color: #0493bd;
-}
-	
-.montform  .submit:hover {
-	color: #3498db;
-}
-	
-.ease {
-	width: 0px;
-	height: 74px;
-	background-color: #fbfbfb;
-	transition: .3s ease;
-}
-
-.submit:hover .ease{
-  width:100%;
-  background-color:white;
-}
-
-/*Styles for small screens*/
-
-@media  only screen and (max-width: 580px) {
-	#form-div{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
-		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
-	}
-}
-
-
-    </style>
-    </head>
-<body >
-    
-    
-        <div class="container">
-            <div id="form-main">
-                <div id="form-div">
-                    <form class="montform" id="reused_form" enctype=&quot;multipart/form-data&quot; >
-                        <p class="name">
-                            <input name="name" type="text" class="feedback-input" required placeholder="Name" id="name" />
-                        </p>
-                        <p class="email">
-                            <input name="email" type="email" required class="feedback-input" id="email" placeholder="Email" />
-                        </p>
-                        <p class="text">
-                            <textarea name="message" class="feedback-input" id="comment" placeholder="Message"></textarea>
-                        </p>
-                        <p class="file">
-                            <input name="image" type="file" id="file" class="feedback-input">
-                        </p>
-                        <div class="submit">
-                            <button type="submit" class="button-blue">SUBMIT</button>
-                            <div class="ease"></div>
-                        </div>
-                    </form>
-                    <div id="error_message" style="width:100%; height:100%; display:none; ">
-                        <h4>
-                            Error
-                        </h4>
-                        Sorry there was an error sending your form. 
-                    </div>
-                    <div id="success_message" style="width:100%; height:100%; display:none; "> <h2>Success! Your Message was Sent Successfully.</h2> </div>
-                </div>
-            </div>
-        </div>
-    </body>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 {% endblock content %}
