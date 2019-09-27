@@ -32,16 +32,23 @@
       <label for="validationDefault01">Name</label>
       <input type="text"  name='name' class="form-control" id="validationDefault01" placeholder="Full Name" maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)"   required>
 		</div>
+
+
+    <div class="col-md-12 mb-3">
+      <label for="validationDefault02">Father Name</label>
+      <input type="text" name="fname" class="form-control" id="validationDefault02" placeholder="Father name"  maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)"   required>
+    </div>
+
     <div class="col-md-12 mb-3 form-group">
     <label for="validationDefault01">Gender</label>
-    <select name="gender" class="form-control">
-    <option value="Male">Male</option>
-    <option value="Female">Female</option>
-    <option value="Other"> other </option>
+
+ <input type="text" name="Female" value="Female" class="form-control" id="validationDefault03" placeholder='Female' readonly>
+
+    </div>
 </select>
 </div>
-
-    <!-- <input type="radio" name="male" value="male" checked> Male<br>
+<!--
+     <input type="radio" name="male" value="male" checked> Male<br>
   <input type="radio" name="female" value="female"> Female<br>
   <input type="radio" name="other" value="other"> Other<br>
    -->
@@ -50,17 +57,6 @@
  <input type="date" class="form-control "name="dob"></div>
 
 
-    <div class="col-md-12 mb-3">
-      <label for="validationDefault02">Father Name</label>
-      <input type="text" name="fname" class="form-control" id="validationDefault02" placeholder="Father name"  maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)"   required>
-    </div>
-
-
-
-		<div class="col-md-12 mb-3">
-      <label for="validationDefault02">Mother Name</label>
-      <input type="text" name="mname" class="form-control" id="validationDefault02" placeholder="Mother name"  maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)"   required>
-    </div>
 
 
   <div class="col-md-12 mb-3">
@@ -107,64 +103,102 @@ function hidefunction(){
   <label for="validationDefault02">Semester</label>
 	<select name="sem" class="form-control">
 	<option value=""></option>
-	<option value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-	<option value="4">4</option>
-	<option value="5">5</option>
-	<option value="6">6</option>
+	<option value="1">1 Semester</option>
+	<option value="2">2 Semester</option>
+	<option value="3">3 Semester</option>
+	<option value="4">4 Semester</option>
+	<option value="5">5 Semester</option>
+	<option value="6">6 Semester</option>
 </select>
 </div>
 </div>
 
-    <div class="col-md-12 mb-3">
-      <label for="validationDefault03">Address</label>
-      <input type="text" name="address" class="form-control" id="validationDefault03" placeholder="Address" required>
-    </div>
-
    <div class="col-md-12 mb-3">
      <label for="validationDefault03">College</label>
-     <input type="text" name="college" value="vrg girls college" class="form-control" id="validationDefault03" placeholder='vrg girls college' readonly>
+     <input type="text" name="college" value="Vijaya Raje Government Girls PG College" class="form-control" id="validationDefault03" placeholder='Vijaya Raje Government Girls PG College' readonly>
    </div>
 
-
-
  <div class="col-md-12 mb-3">
-   <label for="validationDefault02">branch</label>
-   <input type="text" name="branch" class="form-control" id="validationDefault02" placeholder="branch"  required>
+   <label for="validationDefault02">Branch</label>
+<select name="branch" class="form-control">
+     <option value=" "> </option>
+     <option value="B.A">B.A</option>
+    <option value="B.Com">B.Com</option>
+    <option value="B.Sc">B.Sc</option>
+    <option value="B.H.Sc">B.H.Sc</option>
+    <option value="M.A.">M.A.</option>
+    <option value="M.Com">M.Com</option>
+    <option value="M.Sc">M.Sc</option>
+    <option value="M.H.Sc">M.H.Sc</option>
+
+</select>
  </div>
-
-
-
 <div class="col-md-12 mb-3">
   <label for="validationDefault02">Session</label>
   <input type="text" name="session" class="form-control" id="validationDefault02" placeholder="Session"  required>
 </div>
+   <!-- Regular or Private Select karne par form regular wala aaye aur private karne par private wala aaye
 
-
-<div class="form-group">
-<div class="col-md-12 mb-3">
-  <label for="validationDefault02">Student Type</label>
-
-	<select name="stype" class="form-control" required>
-	<option value="Regular">Regular</option>
-	<option value="private">private</option>
+   ye wala regular ka hain
+     <div  class="container" id='Regular'>
+<div class="col-md-12 mb-3 form-group">
+  <label for="validationDefault02">Year of study</label>
+	 <select name="Regular" class="form-control" required>
+	<option value="1">Regular</option>
+	<option value="2">Supplementary</option>
+	<option value="3">EX</option>
+        <option value="4">ATKT</option>
 </select>
 </div>
 </div>
 
-<div class="form-group">
-<div class="col-md-12 mb-3">
-  <label for="validationDefault02">Student Status</label>
-	<select name="sstype" class="form-control" required>
-	<option value="Regular">Regular</option>
-	<option value="supplementary">supplementary </option>
-        <option value="EX">EX</option>
-        <option value="ATKT">ATKT</option>
+and last wala private -->
+ <script>
+     function hidefuncation(){
+     if(document.getElementById("Regular").style.display=="block"){
+      document.getElementById("Private").style.display="block";
+  document.getElementById("Regular").style.display="none";
+  }
+  else{
+    document.getElementById("Private").style.display="none";
+    document.getElementById("Regular").style.display="block";
+  }
+}
+ </script>
+    <div class=" form-group">
+  <div class="col-md-12 mb-3 form-group">
+  <label>Select type</label>
+<select name="regular" class= "form-control"onchange="hidefunction()" >
+<option value="regular">Regular</option>
+<option value="private">Private</option>
+</select>
+</div>
+</div>
+<div  class="container" id='Regular'>
+<div class="col-md-12 mb-3 form-group">
+  <label for="validationDefault02">Year of study</label>
+	 <select name="Regular" class="form-control" required>
+         <option value=" "> </option>
+	<option value="1">Regular</option>
+	<option value="2">Supplementary</option>
+	<option value="3">EX</option>
+         <option value="4">ATKT</option>
 </select>
 </div>
 </div>
 
+<div class="container" id="Private">
+<div class="col-md-12 mb-3 form-group">
+  <label for="validationDefault02">Semester</label>
+<select name="Private" class="form-control" required>
+    <option value=" "> </option>
+	<option value="1">Private</option>
+	<option value="2">Supplementary </option>
+	<option value="3">EX</option>
+	<option value="4">ATKT</option>
+</select>
+</div>
+</div>
   <button class="btn btn-primary" type="submit">Submit form</button>
 </div>
 </div>

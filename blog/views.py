@@ -26,10 +26,11 @@ def bform(request):
         mname = request.POST.get("mname")
         rollno = request.POST.get("rnumber")
         sem = request.POST.get("sem")
-        address = request.POST.get("address")
         college_name = request.POST.get("college")
         branch = request.POST.get("branch")
         year = request.POST.get("session")
+        Regular = request.POST.get("Regular")
+        Private = request.POST.get("Private")
         stype = request.POST.get("stype")
         sstype = request.POST.get("sstype")
         if stype == 'Regular':
@@ -53,6 +54,8 @@ def bform(request):
             college_name=college_name,
             branch=branch,
             year=year,
+            Regular=Regular,
+            Private=Private,
             stype=stype,
             application_fee=application_fee,
             total_fee=total,
@@ -89,12 +92,6 @@ def base(request):
 
 # def payment(request):
 #     return render(request, 'payment.html')
-
-
-
-
-
-
 
 def gallery(request):
  return render(request, 'blog/gallery.html')
