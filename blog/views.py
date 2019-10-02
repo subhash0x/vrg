@@ -31,16 +31,15 @@ def bform(request):
         stype = request.POST.get("stype")
         regulartyp= request.POST.get("regulartyp")
         privatetyp= request.POST.get("privatetyp")
-
+        portal_fee=40
+        total=0
+        late_fee=0
         if stype == 'regular':
-            application_fee=100
-            portal_fee=0
-            late_fee=0
-            total=0
+            application_fee=215
             total=application_fee+late_fee+portal_fee
-            print("wow")
-            print(application_fee)
-
+        elif stype == 'private':
+            application_fee=515
+            total=application_fee+late_fee+portal_fee
         student = Student.objects.create(
             name=sname,
             dob=dob,
