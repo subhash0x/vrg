@@ -2,48 +2,28 @@
 {% load static %}
 {% block content %}
 
-
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
 <div class="container mt-3">
   <h2>Department of Science</h2>
-  <p>here you can see details about the science department</p>  
-  
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link active" href="#Botany">Botany</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#Biotechnology">Biotechnology</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#MicroBiology">MicroBiology</a>
-    </li>
-	<li class="nav-item">
-	<a class="nav-link" href="#Chemistry">Chemistry</a>
-	</li>
-	<li class="nav-item">
-	<a class="nav-link" href="#Maths">Maths</a>
-	</li>
-	<li class="nav-item">
-	<a class="nav-link" href="#Physics">Physics</a>
-	</li>
-	<li class="nav-item">
-	<a class="nav-link" href="#Zoology">Zoology</a>
-	</li>
-  </ul>
-  
+  <p>here you can see details about the science department</p>
 
+  <!-- Nav tabs -->
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#Botany" role="tab" aria-controls="nav-home" aria-selected="true">Botany</a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#Biotechnology" role="tab" aria-controls="nav-profile" aria-selected="false">Biotechnology</a>
+      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#MicroBiology" role="tab" aria-controls="nav-contact" aria-selected="false">MicroBiology</a>
+      <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#Chemistry" role="tab" aria-controls="nav-home" aria-selected="true">Chemistry</a>
+      <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#Mathematic" role="tab" aria-controls="nav-profile" aria-selected="false">Mathematic</a>
+      <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#Physics" role="tab" aria-controls="nav-contact" aria-selected="false">Physics</a>
+      <a class="nav-item nav-link" id="nav-home-tab" data-toggle="tab" href="#Zoology" role="tab" aria-controls="nav-home" aria-selected="true">Zoology</a>
+
+    </div>
+  </nav>
   <!-- Tab panes -->
-  <div class="tab-content border mb-3">
-    <div id="Botany" class="container tab-pane active"><br>
+  <div class="tab-content border" id="nav-tabContent" style="padding:30px;">
+  <div class="tab-pane fade show active" id="Botany" role="tabpanel" aria-labelledby="nav-home-tab"><br>
       <h3>Botany Department</h3>
-     
+
 	  <div class="right_part"><!-- InstanceBeginEditable name="content" -->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
       <tr>
@@ -51,17 +31,17 @@
       </tr>
       <tr>
         <td valign="top" style="padding:20px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-          
+
           <tr>
-            <td class="welcome_text"> The department of Botany was established 
+            <td class="welcome_text"> The department of Botany was established
 in 1958. Post-graduation in Botany was started in 1971, with specialization in Plant-Pathology.
 In 1990, two more specializations i.e. Microbiology &amp;amp; Phycology were
-added. 
-At undergraduate level Microbiology was 
-initially started in combination with Chemistry &amp; 
-Zoology under self-financing scheme in1999. This combination was later changed to 
-Chemistry; Microbiology and Botany. The department is running post graduation 
-course in Microbiology since 2002. 3-months certificate 
+added.
+At undergraduate level Microbiology was
+initially started in combination with Chemistry &amp;
+Zoology under self-financing scheme in1999. This combination was later changed to
+Chemistry; Microbiology and Botany. The department is running post graduation
+course in Microbiology since 2002. 3-months certificate
 course on instrumentation and Bonsai. </td>
           </tr>
           <tr>
@@ -120,7 +100,7 @@ course on instrumentation and Bonsai. </td>
           <tr>
             <td class="welcome style4">Infrastructure</td>
           </tr>
-          
+
           <tr>
             <td class="welcome_text"><ul style="padding-top: 0; margin-top: 0;">
                   <li><strong>LABORATORIES :</strong>
@@ -343,26 +323,26 @@ course on instrumentation and Bonsai. </td>
     </table>
   <!-- InstanceEndEditable --></div>
     </div>
-    <div id="Biotechnology" class="container tab-pane fade"><br>
+    <div class="tab-pane fade" id="Biotechnology" role="tabpanel" aria-labelledby="nav-profile-tab"><br>
       <h3>Biotechnology</h3>
       <div class="right_part"><!-- InstanceBeginEditable name="content" -->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      
+
       <tr>
-<td class="welcome_text">What is Biotechnology?</td>       
+<td class="welcome_text">What is Biotechnology?</td>
 	   <tr>
               <td class="welcome_text">Bio- Alive or living Technology – The application of Science to Achiever industrial or Commercial objective , Hence Biotechnology in about living material or microbes for commercial or industrial problem.<br><br><br>
 </td>
             </tr>
 			<br>
-			<td class="welcome_text">Area of Biotechnology:</td>  
+			<td class="welcome_text">Area of Biotechnology:</td>
 <tr>
               <td class="welcome_text"><ul>
                   <li>Geniture engineering </li>
                 <li>Molecular cell biology</li>
                 <li>Agriculture Biotechnology</li>
 				 <li>Animal biotechnology</li>
-				  <li>Plant Biotechnology</li> 
+				  <li>Plant Biotechnology</li>
 				  <li>Human biotechnology</li>
 				  <li>Microbial biotechnology</li>
 				  <li>Environmental biotechnology</li>
@@ -370,7 +350,7 @@ course on instrumentation and Bonsai. </td>
             </tr>
             <tr>
               <td height="25"><span class="style2">Biotechnology Tool (To ways Biotechnology is three ways.)</span></td>
-            
+
 			</tr>
             <tr>
               <td class="welcome_text"><ul>
@@ -379,7 +359,7 @@ course on instrumentation and Bonsai. </td>
                 <li>Using genetic material inside cell</li>
                 <li>Using stem cell/Diploids in IVF/stem our technology</li>
                 <li>Using microbe the plant / chop improvement</li>
-                
+
               </ul>
 </tr>
             <tr>
@@ -416,26 +396,26 @@ course on instrumentation and Bonsai. </td>
                 <li>Cultrate cabinet</li>
                 <li>Spectropholmeter U.V.</li>
                 <li>Refrigerated centrifuge</li>
-				
+
               </ul>
 </tr>
             </tr>
-            
+
         </table></td>
       </tr>
     </table>
   <!-- InstanceEndEditable -->
 </div>
     </div>
-    <div id="MicroBiology" class="container tab-pane fade"><br>
+    <div class="tab-pane fade" id="MicroBiology" role="tabpanel" aria-labelledby="nav-profile-tab"><br>
       <h3>Department of Microbiology</h3>
-     
+
 	    <div class="right_part"><!-- InstanceBeginEditable name="content" -->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      
+
       <tr>
         <td style="padding:20px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                   
+
             <tr>
               <td class="welcome_text">Microbiology was started at under graduate level in 2007. The PG was Started in 2011 and is affiliated to the Jiwaji University.</td>
             </tr>
@@ -494,7 +474,7 @@ course on instrumentation and Bonsai. </td>
                   M.Sc Microbiology (2011) Two Years experience of teaching of UG and PG Classes.</li>
               </ol></td>
             </tr>
-            
+
         </table></td>
       </tr>
     </table>
@@ -511,29 +491,29 @@ course on instrumentation and Bonsai. </td>
 </div>
 
     </div>
-	  <div id="Chemistry" class="container tab-pane fade"><br>
+	   <div class="tab-pane fade" id="Chemistry" role="tabpanel" aria-labelledby="nav-profile-tab"><br>
       <h3>Department of Chemistry</h3>
       <div class="right_part"><!-- InstanceBeginEditable name="content" -->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      
+
       <tr>
         <td style="padding:20px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            
+
             <tr>
               <td class="welcome_text"><p>Department of chemistry  was establish 1983 along with the commencement of science stream in the college  chemistry was introduced as compulsory subjects for all science students at  undergraduate level.</p>
                 <p>With the advent of time  the department has developed a good infrastructure including spacious &amp;  well equipped UG and PG laboratories. The department is also equipped with  smart class and computer internet facility. The total strength of students in  chemistry is approximately 500.</p>
                 <p>Presently post graduated  courses are being offered under self finance posts, the department has  maintained its standard in teaching. Research and other academic activities. <br />
               The department receives  regular financial support from UGC and janbhagidari samiti of the college.</p></td>
             </tr>
-            
+
         </table></td>
       </tr>
       <tr>
         <td class="welcome_text" style="padding:20px; padding-top:0px;">
             <span class="style2">Success Growth:-</span>
-          
+
             <br />
-          Chemistry is offered as compulsory  subject in the following group of courses.    
+          Chemistry is offered as compulsory  subject in the following group of courses.
           <ul>
           <ul>
             <li>Physics-Maths-Chemistry</li>
@@ -546,7 +526,7 @@ course on instrumentation and Bonsai. </td>
               .</p>
             </li>
           </ul>
-          <p>Department has organized a successful  national level training workshop on Low cost instrumentation supported by CPDHE  Delhi (1997)          
+          <p>Department has organized a successful  national level training workshop on Low cost instrumentation supported by CPDHE  Delhi (1997)
           <ul><li>National level seminar on Emerging  chemistry technologies supported by UGC (2002)</li>
             <li>Series of Lectures/Instrumentation  training workshop at regional level are conducted regularly.</li>
             <li>International year of chemistry  IYC-2012 was celebrated.</li>
@@ -605,7 +585,7 @@ course on instrumentation and Bonsai. </td>
       </tr>
       <tr>
         <td class="welcome_text" style="padding:20px; padding-top:0px;"><span class="style2">Collaboration:-          </span><br />
-        The department collaborates with renowned organization in  region.    
+        The department collaborates with renowned organization in  region.
           <ol>
           <ul>
             <li>Department of chemistry , jiwaji  university, Gwalior </li>
@@ -627,7 +607,7 @@ Guest faculty  = 02 (for self finance courses)</td>
           Participation international                  -           international conference of  environment<br />
           Conferences (past of 05 year)          -           chemistry at Mauritius – 2010<br />
           Other imp participation                      -           training workshop on women empowerment 2011<br />
-          Other responsibilities 
+          Other responsibilities
           <ol>
             <li>Superintendent university exam </li>
             <li>Convener scholarship scheme (UGC) </li>
@@ -676,18 +656,18 @@ Guest faculty  = 02 (for self finance courses)</td>
 </div>
 
     </div>
-	<div id="Maths" class="container tab-pane fade"><br>
+  <div class="tab-pane fade" id="Mathematic" role="tabpanel" aria-labelledby="nav-profile-tab"><br>
       <h3>Mathematics Department</h3>
       <div class="right_part"><!-- InstanceBeginEditable name="content" -->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      
+
       <tr>
         <td style="padding:20px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            
+
             <tr>
               <td class="welcome_text"><p>The Mathematic Department of the  college has two sanctioned posts. Dr. A.V. vinchurkar &amp; P.C. Jatav are the  two professor working in the department the subjects mathematics a ------- only  at the undergraduate level with physic/chemistry/computer science as other two  subjects there are over 300 students admitted in the subject</p></td>
             </tr>
-            
+
         </table></td>
       </tr>
       <tr>
@@ -706,21 +686,21 @@ Guest faculty  = 02 (for self finance courses)</td>
   </table>
 </div>
     </div>
-	<div id="Physics" class="container tab-pane fade"><br>
+	  <div class="tab-pane fade" id="Physics" role="tabpanel" aria-labelledby="nav-profile-tab"><br>
       <h3>Physics Department</h3>
       <div class="right_part"><!-- InstanceBeginEditable name="content" -->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      
+
       <tr>
         <td style="padding:20px; padding-bottom:0px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            
+
             <tr>
               <td class="welcome_text"><p>There are two santimed posts in the  department. The subject thought only in the undergraduate classes. The department  has two laboration well equipped with the apparatus that are required in the  experiments at undergraduate level.<br />
                 <br />
                     <span class="style2">No of students – 300<br />
               Established in - 1983</span></p></td>
             </tr>
-            
+
         </table></td>
       </tr>
       <tr>
@@ -776,14 +756,14 @@ Guest faculty  = 02 (for self finance courses)</td>
 
 
     </div>
-	<div id="Zoology" class="container tab-pane fade"><br>
+	  <div class="tab-pane fade" id="Zoology" role="tabpanel" aria-labelledby="nav-profile-tab"><br>
       <h3>Department of Zoology</h3>
       <div class="right_part"><!-- InstanceBeginEditable name="content" -->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      
+
       <tr>
         <td style="padding:20px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-            
+
             <tr>
               <td class="welcome_text"><p><strong>The Department of Zoology</strong> was established in ----. The built up area of the department is ~ --- square meters. The undergraduate Classes are only run by the department . this department has only one teacher.</p>
                 <p><strong>Highlights <br />
@@ -845,7 +825,7 @@ Publisher - Ram Prasad Publication Agra.</li>
                   <li>Zoology, Microbiology, Chemistry</li>
                 </ul>
               <p>The Curriculum of Undergraduate level<br />
-              Recommended by the central Board of Higher Education Bhopal (M.P.)<br />  
+              Recommended by the central Board of Higher Education Bhopal (M.P.)<br />
                     <br />
                 </p>              </td>
             </tr>
@@ -872,22 +852,5 @@ Publisher - Ram Prasad Publication Agra.</li>
   <p class="act"><b>Active Tab</b>: <span></span></p>
   <p class="prev"><b>Previous Tab</b>: <span></span></p>
 </div>
-
-<script>
-$(document).ready(function(){
-  $(".nav-tabs a").click(function(){
-    $(this).tab('show');
-  });
-  $('.nav-tabs a').on('shown.bs.tab', function(event){
-    var x = $(event.target).text();         // active tab
-    var y = $(event.relatedTarget).text();  // previous tab
-    $(".act span").text(x);
-    $(".prev span").text(y);
-  });
-});
-</script>
-
-
-
 
 {% endblock content %}
