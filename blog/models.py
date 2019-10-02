@@ -5,11 +5,6 @@ import datetime
 
 
 
-GENDER_CHOICES = (
-    ('Male','Male'),
-    ('Female ','Female'),
-    ('other','other'),
-)
 
 
 category= (
@@ -41,20 +36,18 @@ class Student(models.Model):
      total_fee = models.IntegerField(blank=True,default=0)
      name = models.CharField(max_length=100,blank=True)
      fname = models.CharField(max_length=100,blank=True)
-     mname = models.CharField(max_length=100,blank=True)
      college_name = models.CharField(max_length=100,blank=True)
      eno = models.CharField(max_length=50, blank=True)
      course = models.CharField(max_length=50, blank=True)
      branch = models.CharField(max_length=50, blank=True)
-     gender = models.CharField(max_length=20, choices=GENDER_CHOICES, default='Male')
      rollno= models.IntegerField(blank=True,default=100)
      year =models.CharField(max_length=50, blank=True)
      sem =models.CharField(max_length=50, blank=True)
      dob = models.DateField()
-   #  Regular =models.CharField(max_length=50, black=True)
-  #   Private =models.CharField(max_length=50 , blank=True)
+     session = models.CharField(max_length=50, blank=True)
      stype = models.CharField(max_length=50, blank=True)
-     sstype = models.CharField(max_length=50, blank=True)
+     regulartyp = models.CharField(max_length=50, blank=True)
+     privatetyp = models.CharField(max_length=50, blank=True)
      payment_status = models.CharField(max_length=50, default='pending')
      def publish(self):
          self.save()

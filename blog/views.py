@@ -21,19 +21,17 @@ def bform(request):
     if request.method == 'POST':
         sname = request.POST.get("name")
         dob = request.POST.get("dob")
-        gender = request.POST.get("gender")
         fname = request.POST.get("fname")
-        mname = request.POST.get("mname")
         rollno = request.POST.get("rnumber")
         sem = request.POST.get("sem")
         college_name = request.POST.get("college")
         branch = request.POST.get("branch")
-        year = request.POST.get("session")
-        Regular = request.POST.get("Regular")
-        Private = request.POST.get("Private")
+        session = request.POST.get("session")
         stype = request.POST.get("stype")
-        sstype = request.POST.get("sstype")
-        if stype == 'Regular':
+        regulartyp= request.POST.get("regulartyp")
+        privatetyp= request.POST.get("privatetyp")
+
+        if stype == 'regular':
             application_fee=100
             portal_fee=0
             late_fee=0
@@ -44,19 +42,16 @@ def bform(request):
 
         student = Student.objects.create(
             name=sname,
-            gender=gender,
             dob=dob,
             fname=fname,
-            mname=mname,
             rollno=rollno,
             sem=sem,
-            address=address,
             college_name=college_name,
             branch=branch,
-            year=year,
-            Regular=Regular,
-            Private=Private,
+            session=session,
             stype=stype,
+            regulartyp=regulartyp,
+            privatetyp=privatetyp,
             application_fee=application_fee,
             total_fee=total,
             late_fee=late_fee,
