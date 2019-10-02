@@ -37,8 +37,6 @@ class Student(models.Model):
      name = models.CharField(max_length=100,blank=True)
      fname = models.CharField(max_length=100,blank=True)
      college_name = models.CharField(max_length=100,blank=True)
-     eno = models.CharField(max_length=50, blank=True)
-     course = models.CharField(max_length=50, blank=True)
      branch = models.CharField(max_length=50, blank=True)
      rollno= models.IntegerField(blank=True,default=100)
      year =models.CharField(max_length=50, blank=True)

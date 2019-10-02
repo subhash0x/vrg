@@ -23,6 +23,7 @@ def bform(request):
         dob = request.POST.get("dob")
         fname = request.POST.get("fname")
         rollno = request.POST.get("rnumber")
+        year = request.POST.get("year")
         sem = request.POST.get("sem")
         college_name = request.POST.get("college")
         branch = request.POST.get("branch")
@@ -45,6 +46,7 @@ def bform(request):
             dob=dob,
             fname=fname,
             rollno=rollno,
+            year=year,
             sem=sem,
             college_name=college_name,
             branch=branch,

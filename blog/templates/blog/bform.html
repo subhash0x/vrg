@@ -39,11 +39,7 @@
       <label for="validationDefault02">Father Name</label>
       <input type="text" name="fname" class="form-control" id="validationDefault02" placeholder="Father name"  onkeypress="return /[a-zA-z ]/i.test(event.key)"   required>
     </div>
-<!--
-     <input type="radio" name="male" value="male" checked> Male<br>
-  <input type="radio" name="female" value="female"> Female<br>
-  <input type="radio" name="other" value="other"> Other<br>
-   -->
+
   	<div class="col-md-12 mb-3">
         <label for="validationDefault01">Date of Birth</label>
  <input type="date" class="form-control "name="dob"></div>
@@ -82,7 +78,7 @@ document.getElementById("Regular").style.display="block";
 <div class=" form-group">
   <div class="col-md-12 mb-3 form-group">
   <label>Select type</label>
-<select name="year" class= "form-control"onchange="hidefunction()" >
+<select name="dontneed" class= "form-control"onchange="hidefunction()" >
 <option value="year">Year</option>
 <option value="sem">Semester</option>
 </select>
@@ -153,10 +149,10 @@ document.getElementById("Regular").style.display="block";
   <label for="validationDefault02">Fee Type</label>
 	 <select name="regulartyp" class="form-control" required>
          <option value=" "> </option>
-	<option value="1">Regular</option>
-	<option value="2">Supplementary</option>
-	<option value="3">EX</option>
-         <option value="4">ATKT</option>
+	<option value="Regular">Regular</option>
+	<option value="Supplementary">Supplementary</option>
+	<option value="EX">EX</option>
+         <option value="ATKT">ATKT</option>
 </select>
 </div>
 </div>
@@ -166,17 +162,15 @@ document.getElementById("Regular").style.display="block";
   <label for="validationDefault02">Fee Type</label>
 <select name="privatetyp" class="form-control" required>
     <option value=" "> </option>
-	<option value="1">Private</option>
-	<option value="2">Supplementary </option>
-	<option value="3">EX</option>
-	<option value="4">ATKT</option>
+	<option value="Private">Private</option>
+	<option value="Supplementary">Supplementary </option>
+	<option value="EX">EX</option>
+	<option value="ATKT">ATKT</option>
 </select>
 </div>
 </div>
   <button class="btn btn-primary" type="submit">Submit form</button>
 </div>
-</div>
-</form>
 </div>
 </center>
 </body>
