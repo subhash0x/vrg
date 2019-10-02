@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from django.urls import path, include ,reverse
-from .models import Post,Student
+from .models import Post,Student,Contact
 import datetime
 from django.utils import timezone
 from django.shortcuts import render_to_response
@@ -108,12 +108,30 @@ def arts(request):
 def activites(request):
  return render(request, 'blog/activites.html')
 
+
+
 def contact(request):
-    # if request.method == 'POST':
-    #     sname = request.POST.get("name")
+    if request.method == 'POST':
+        name = request.POST.get("name")
+        fname = request.POST.get("fname")
+        enno = request.POST.get("enno")
+        email = request.POST.get("email")
+        subject= request.POST.get("subject")
+        file = request.POST.get("file")
+        contact = Contact.objects.create(
+             name=name,
+             fname=fname,
+             enno=enno,
+             email=email,
+             subject=subject,
+             file=file
+             )
+        return redirect(reverse('contact'))
+    return render(request, 'blog/contact.html')
 
 
- return render(request, 'blog/contact.html')
+
+
 
 def telephonedir(request):
  return render(request, 'blog/telephonedir.html')

@@ -16,7 +16,7 @@ class Contact(models.Model):
     enno= models.IntegerField(blank=True,default=100)
     email = models.CharField(max_length=100,blank=True)
     subject = models.CharField(max_length=100,blank=True)
-    attachment = models.FileField(upload_to='contactus',default='null')
+    file = models.FileField(upload_to='contactus',default='null')
     def publish(self):
         self.save()
 

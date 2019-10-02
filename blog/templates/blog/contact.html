@@ -38,19 +38,20 @@ input[type=text], select, textarea ,input[type=file]{
     <center><h3>Contact Form</h3></center>
 
 <div class="card-body">
-  <form action="#">
+  <form action='' method="post">
+       {% csrf_token %}
     <label for="fname">Full Name</label>
-    <input type="text" maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)" id="fname" name="fullname" placeholder="Your Name ">
+    <input type="text" name="name" maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)" id="fname" name="fullname" placeholder="Your Name ">
     <label for="fname">Father Name</label>
-    <input type="text" maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)" id="fathername" name="fathername" placeholder="Father Name">
+    <input type="text" name="fname"maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)" id="fathername" name="fathername" placeholder="Father Name">
     <label for="lname">Enrollment No.</label>
-    <input type="text" maxlength = "15" id="enrollment" name="enrollment" placeholder="Enrollment Number">
+    <input type="text" name="enno" maxlength = "15" id="enrollment" name="enrollment" placeholder="Enrollment Number">
     <label for="lname">Email Address</label>
-    <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" name="email"  placeholder="example@email.com">
+    <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" name="email"  placeholder="example@email.com">
     <label for="subject">Subject</label>
-    <textarea id="subject" maxlength="2500" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <textarea id="subject" name="subject" maxlength="2500" name="subject" placeholder="Write something.." style="height:200px"></textarea>
     <label for="afiles">Attach Files</label>
-    <input type="file" name="pic" accept="image/*">
+    <input type="file" name="file"  accept="image/*">
     <center>
     <br>  <button class="btn btn-primary btncss" type="submit">Submit</button>
     </center>
