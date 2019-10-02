@@ -5,10 +5,6 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </head>
 <script>
@@ -56,20 +52,24 @@
 <script>
 function hidefunction(){
   if(document.getElementById("Year").style.display=="block"){
+			document.getElementById("yy").selectedIndex=0;
       document.getElementById("sem").style.display="block";
   document.getElementById("Year").style.display="none";
   }
   else{
+			document.getElementById("ss").selectedIndex=0;
     document.getElementById("sem").style.display="none";
     document.getElementById("Year").style.display="block";
   }
 }
 function changefunction(){
 if(document.getElementById("Regular").style.display=="block"){
+	document.getElementById("rr").selectedIndex=0;
  document.getElementById("Private").style.display="block";
 document.getElementById("Regular").style.display="none";
 }
 else{
+	document.getElementById("pp").selectedIndex=0;
 document.getElementById("Private").style.display="none";
 document.getElementById("Regular").style.display="block";
 }
@@ -87,7 +87,7 @@ document.getElementById("Regular").style.display="block";
 <div id='Year'>
 <div class="col-md-12 mb-3 form-group">
   <label for="validationDefault02">Year of study</label>
-	<select  name="year" class="form-control">
+	<select  name="year" id="yy" class="form-control">
 	<option value=""></option>
 	<option value="1">1 Year</option>
 	<option value="2">2 Year</option>
@@ -99,7 +99,7 @@ document.getElementById("Regular").style.display="block";
 <div id="sem">
 <div class="col-md-12 mb-3 form-group">
   <label for="validationDefault02">Semester</label>
-	<select name="sem" class="form-control">
+	<select name="sem" id="ss" class="form-control">
 	<option value=""></option>
 	<option value="1">1 Semester</option>
 	<option value="2">2 Semester</option>
@@ -147,8 +147,8 @@ document.getElementById("Regular").style.display="block";
 <div  id='Regular'>
 <div class="col-md-12 mb-3 form-group">
   <label for="validationDefault02">Fee Type</label>
-	 <select name="regulartyp" class="form-control" required>
-         <option value=" "> </option>
+	 <select name="regulartyp" id="rr" class="form-control" required>
+  <option value=" "> </option>
 	<option value="Regular">Regular</option>
 	<option value="Supplementary">Supplementary</option>
 	<option value="EX">EX</option>
@@ -160,7 +160,7 @@ document.getElementById("Regular").style.display="block";
 <div  id="Private">
 <div class="col-md-12 mb-3 form-group">
   <label for="validationDefault02">Fee Type</label>
-<select name="privatetyp" class="form-control" required>
+<select name="privatetyp" id="pp" class="form-control" required>
     <option value=" "> </option>
 	<option value="Private">Private</option>
 	<option value="Supplementary">Supplementary </option>
