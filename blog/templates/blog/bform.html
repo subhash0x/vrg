@@ -9,12 +9,14 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	
+
 </head>
 <script>
   function myfun(){
     document.getElementById("sem").style.display="none";
     document.getElementById("Year").style.display="block";
+		document.getElementById("Regular").style.display="block";
+		document.getElementById("Private").style.display="none";
   }
   </script>
 <body onload="myfun()">
@@ -25,28 +27,18 @@
    {% csrf_token %}
 
    <div class="card-body">
-  <div class="container">
 
 
 		<div class="col-md-12 mb-3">
       <label for="validationDefault01">Name</label>
-      <input type="text"  name='name' class="form-control" id="validationDefault01" placeholder="Full Name" maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)"   required>
+      <input type="text"  name='name' class="form-control" id="validationDefault01" placeholder="Full Name" onkeypress="return /[a-zA-z ]/i.test(event.key)"   required>
 		</div>
 
 
     <div class="col-md-12 mb-3">
       <label for="validationDefault02">Father Name</label>
-      <input type="text" name="fname" class="form-control" id="validationDefault02" placeholder="Father name"  maxlength = "30" onkeypress="return /[a-zA-z ]/i.test(event.key)"   required>
+      <input type="text" name="fname" class="form-control" id="validationDefault02" placeholder="Father name"  onkeypress="return /[a-zA-z ]/i.test(event.key)"   required>
     </div>
-
-    <div class="col-md-12 mb-3 form-group">
-    <label for="validationDefault01">Gender</label>
-
- <input type="text" name="Female" value="Female" class="form-control" id="validationDefault03" placeholder='Female' readonly>
-
-    </div>
-</select>
-</div>
 <!--
      <input type="radio" name="male" value="male" checked> Male<br>
   <input type="radio" name="female" value="female"> Female<br>
@@ -76,6 +68,16 @@ function hidefunction(){
     document.getElementById("Year").style.display="block";
   }
 }
+function changefunction(){
+if(document.getElementById("Regular").style.display=="block"){
+ document.getElementById("Private").style.display="block";
+document.getElementById("Regular").style.display="none";
+}
+else{
+document.getElementById("Private").style.display="none";
+document.getElementById("Regular").style.display="block";
+}
+}
 </script>
 <div class=" form-group">
   <div class="col-md-12 mb-3 form-group">
@@ -86,7 +88,7 @@ function hidefunction(){
 </select>
 </div>
 </div>
-<div  class="container" id='Year'>
+<div id='Year'>
 <div class="col-md-12 mb-3 form-group">
   <label for="validationDefault02">Year of study</label>
 	<select  name="year" class="form-control">
@@ -98,7 +100,7 @@ function hidefunction(){
 </div>
 </div>
 
-<div class="container" id="sem">
+<div id="sem">
 <div class="col-md-12 mb-3 form-group">
   <label for="validationDefault02">Semester</label>
 	<select name="sem" class="form-control">
@@ -153,30 +155,18 @@ function hidefunction(){
 </div>
 
 and last wala private -->
- <script>
-     function hidefuncation(){
-     if(document.getElementById("Regular").style.display=="block"){
-      document.getElementById("Private").style.display="block";
-  document.getElementById("Regular").style.display="none";
-  }
-  else{
-    document.getElementById("Private").style.display="none";
-    document.getElementById("Regular").style.display="block";
-  }
-}
- </script>
     <div class=" form-group">
   <div class="col-md-12 mb-3 form-group">
   <label>Select type</label>
-<select name="regular" class= "form-control"onchange="hidefunction()" >
+<select name="regular" class= "form-control"onchange="changefunction()" >
 <option value="regular">Regular</option>
 <option value="private">Private</option>
 </select>
 </div>
 </div>
-<div  class="container" id='Regular'>
+<div  id='Regular'>
 <div class="col-md-12 mb-3 form-group">
-  <label for="validationDefault02">Year of study</label>
+  <label for="validationDefault02">Fee Type</label>
 	 <select name="Regular" class="form-control" required>
          <option value=" "> </option>
 	<option value="1">Regular</option>
@@ -187,9 +177,9 @@ and last wala private -->
 </div>
 </div>
 
-<div class="container" id="Private">
+<div  id="Private">
 <div class="col-md-12 mb-3 form-group">
-  <label for="validationDefault02">Semester</label>
+  <label for="validationDefault02">Fee Type</label>
 <select name="Private" class="form-control" required>
     <option value=" "> </option>
 	<option value="1">Private</option>
