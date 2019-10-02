@@ -9,6 +9,20 @@ category= (
     ('other','Staff Notice Board'),
 )
 
+
+class Contact(models.Model):
+    name = models.CharField(max_length=100,blank=True)
+    fname = models.CharField(max_length=100,blank=True)
+    enno= models.IntegerField(blank=True,default=100)
+    email = models.CharField(max_length=100,blank=True)
+    subject = models.CharField(max_length=100,blank=True)
+    attachment = models.FileField(upload_to='contactus',default='null')
+    def publish(self):
+        self.save()
+
+    def __str__(self):
+        return self.name
+
 class Post(models.Model):
     title = models.CharField(max_length=200)
     text = models.TextField()

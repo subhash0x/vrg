@@ -109,6 +109,10 @@ def activites(request):
  return render(request, 'blog/activites.html')
 
 def contact(request):
+    # if request.method == 'POST':
+    #     sname = request.POST.get("name")
+
+
  return render(request, 'blog/contact.html')
 
 def telephonedir(request):
