@@ -24,6 +24,7 @@ def payment(request):
     MERCHANT_ID = settings.PAYTM_MERCHANT_ID
     get_lang = "/" + get_language() if get_language() else ''
     CALLBACK_URL = settings.HOST_URL + settings.PAYTM_CALLBACK_URL
+    print(CALLBACK_URL)
     # Generating unique temporary ids
     order_id = Checksum.__id_generator__()
 
@@ -37,9 +38,9 @@ def payment(request):
     elif bill_amount:
         data_dict = {
                     'MID':MERCHANT_ID,
-                    'ORDER_ID':student.application_id,
+                    'ORDER_ID':str(student.application_id),
                     'TXN_AMOUNT': bill_amount,
-                    'CUST_ID': request.user.username,
+                    'CUST_ID': str(request.user.id),
                     'INDUSTRY_TYPE_ID':'Retail',
                     'WEBSITE': 'DEFAULT',
                     'CHANNEL_ID':'WEB',
@@ -59,6 +60,7 @@ def response(request):
         for key in request.POST:
             data_dict[key] = request.POST[key]
         verify = Checksum.verify_checksum(data_dict, MERCHANT_KEY, data_dict['CHECKSUMHASH'])
+        print(str(data_dict))
         if verify:
             order = Student.objects.get(pk=data_dict['ORDERID'])
             ph = PaytmHistory.objects.create(user=order, **data_dict)
